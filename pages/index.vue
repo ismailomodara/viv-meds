@@ -32,7 +32,8 @@ export default {}
 <style>
 .container {
   margin: 0 auto;
-  min-height: 100vh;
+  min-height: 200vh;
+  background: red;
   display: flex;
   justify-content: center;
   align-items: center;

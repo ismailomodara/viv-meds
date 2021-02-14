@@ -1,55 +1,115 @@
 <template>
   <div>
-    <Nuxt />
+    <div id="topPage" ref="topPage">
+      <div v-if="showScrollToBottom" class="ms-to-bottom">
+        <el-button
+          type="primary"
+          icon="el-icon-bottom"
+          circle
+          @click="scrollToBottom"
+        ></el-button>
+      </div>
+      <nav-bar />
+      <nuxt />
+      <div v-if="showBackToTop" class="ms-back-to-top">
+        <el-button
+          type="primary"
+          icon="el-icon-top"
+          circle
+          @click="backToTop"
+        ></el-button>
+      </div>
+    </div>
   </div>
 </template>
 
-<style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+<script>
+import NavBar from '../components/NavBar'
+
+export default {
+  name: 'DefaultLayout',
+  components: {
+    NavBar,
+  },
+  data() {
+    return {
+      loading: false,
+      showScrollToBottom: true,
+      showBackToTop: false,
+    }
+  },
+  watch: {
+    $route() {
+      this.$nextTick(() => {
+        this.loading = true
+        setTimeout(() => (this.loading = false), 800)
+      })
+    },
+  },
+  created() {
+    this.$nextTick(() => {
+      this.loading = true
+      setTimeout(() => (this.loading = false), 800)
+    })
+  },
+  mounted() {
+    window.addEventListener('scroll', () => {
+      this.showBackToTop = window.pageYOffset > 200
+      this.showScrollToBottom = window.pageYOffset < 200
+    })
+  },
+  methods: {
+    scrollToBottom() {
+      window.scrollBy(0, 500)
+      this.showScrollToBottom = false
+    },
+    backToTop() {
+      this.$refs.topPage.scrollIntoView({ behavior: 'smooth' })
+      this.showScrollToBottom = true
+    },
+  },
+}
+</script>
+
+<style scoped lang="scss">
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
+.ms-to-bottom {
+  position: fixed;
+  z-index: 99;
+  right: 40px;
+  bottom: 40px;
+
+  .el-button {
+    box-shadow: -4px 16px 30px rgba(0, 0, 0, 0.2) !important;
+
+    i {
+      animation: fadeIn 3s ease-in both;
+    }
+  }
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+.ms-back-to-top {
+  position: fixed;
+  z-index: 99;
+  right: 40px;
+  bottom: 40px;
+
+  .el-button {
+    box-shadow: -4px 16px 30px rgba(0, 0, 0, 0.1) !important;
+  }
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+@media (max-width: 600px) {
+  .ms-to-bottom {
+    bottom: 30px;
+  }
 }
 </style>

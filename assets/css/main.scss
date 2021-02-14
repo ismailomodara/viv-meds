@@ -1,0 +1,400 @@
+@import "variables";
+@import "layouts";
+@import "theme";
+@import "typography";
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+html,
+body {
+  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: normal;
+  scroll-behavior: smooth;
+  line-height: 1.5;
+  background: #f4faf7;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  &.mobile-nav {
+    overflow: hidden;
+  }
+}
+
+.text-primary {
+  color: #58bb8c;
+}
+
+.strong {
+  font-weight: 700;
+}
+
+.ms-section--heading,
+.el-container {
+  max-width: 90% !important;
+  margin: auto;
+}
+
+.el-form {
+  width: 100%;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.el-input__inner {
+  font-size: 1rem;
+  font-weight: 600;
+
+  &::placeholder {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+}
+
+.el-badge__content.is-fixed {
+  right: 60px;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.w-85 {
+  width: 85%;
+  margin: auto;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
+
+.el-select {
+  width: 100%;
+}
+/* ===================  Carousel Pagination ========================= */
+.ms-header {
+  .VueCarousel-pagination {
+    position: relative;
+    top: -80px;
+  }
+}
+
+.VueCarousel-dot,
+.VueCarousel-dot:hover,
+.VueCarousel-dot:focus {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.35);
+
+  .header-gradient {
+    background: rgb(0, 146, 63);
+    background: linear-gradient(
+        135deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.2) 54%,
+        rgba(255, 255, 255, 0) 76%
+    );
+  }
+}
+
+@keyframes scale {
+  to {
+    transform: scale(1.3);
+  }
+}
+
+  /* =================== El Button ========================= */
+.el-button {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+
+  &:hover {
+    position: relative;
+    transform: translateY(-4px);
+    box-shadow: -4px 16px 30px rgba(0, 0, 0, 0.08) !important;
+    transition: all 0.2s ease-out;
+  }
+
+  &.el-button--secondary,
+  &.el-button--secondary:hover,
+  &.el-button--secondary:focus {
+    background: #FCB320;
+    border-color: #FCB320;
+    color: #fff;
+  }
+
+  a {
+    color: #fff !important;
+  }
+}
+
+.ms-to-bottom .el-button i {
+  font-weight: 600;
+  font-size: 1.2rem;
+  animation: fadeInDown 2s ease-in infinite;
+}
+
+.ms-back-to-top .el-button i {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+  /* =================== Accordion ========================= */
+.el-collapse-item {
+  .el-collapse-item__header {
+    line-height: 1.6;
+    border-left: 5px solid #58bb8c;
+    padding-left: 15px;
+    font-size: 1rem;
+    height: 70px;
+  }
+
+  &.inverse .el-collapse-item__header {
+    border-left: 5px solid #FCB320;
+  }
+
+  .el-collapse-item__content {
+    padding: 20px;
+
+    p {
+      font-size: 0.875rem;
+
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+
+    ul {
+      list-style: square;
+
+      li {
+        font-size: 0.8rem;
+        font-weight: 500;
+        padding: 5px 0;
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+  /* =================== Video Player ========================= */
+.el-dialog {
+  background: transparent;
+  box-shadow: none;
+  height: 70vh;
+  margin-top: 0 !important;
+  top: 50%;
+  transform: translateY(-50%);
+
+  .el-dialog__body {
+    height: 100%;
+
+    iframe {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .el-dialog__header {
+    background: transparent;
+    box-shadow: none;
+
+    .el-dialog__headerbtn {
+      .el-dialog__close {
+        color: #fff;
+        font-weight: 700;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+  /* =================== Section ========================= */
+  .ms-section {
+    padding: 40px 0;
+    background: #fff;
+  }
+
+  .ms-section.grey {
+    background: #EDEDED;
+  }
+
+  .ms-section--heading {
+    position: relative;
+    max-width: 1200px;
+    margin: auto auto 40px;
+
+    h3 {
+      margin-bottom: 20px;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 130%;
+        height: 8px;
+        width: 40px;
+        border-bottom-left-radius: 4px;
+        background: #58bb8c;
+      }
+    }
+
+    &.inverse {
+      h3 {
+        color: #fff;
+
+        &::after {
+          background: #FCB320;
+        }
+      }
+    }
+
+    p {
+      opacity: 1;
+      font-weight: 500;
+      margin-top: 40px;
+      text-align: justify;
+    }
+  }
+
+  .ms-img-title-text img {
+    margin-bottom: 20px;
+  }
+
+  .ms-img-title-text h3 {
+    color: #000;
+    margin-bottom: 15px;
+  }
+
+  .ms-img-title-text p {
+    color: #8E8E8E;
+    font-size: 0.75rem;
+  }
+
+  /* =================== Other Page Header ========================= */
+.ms-header--other {
+  position: relative;
+  height: calc(60vh + 100px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  .ms-header--other__bg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      animation: scale 10000ms ease-in-out forwards;
+    }
+  }
+
+  .ms-header--other__content {
+    position: relative;
+    z-index: 1;
+
+    h1 {
+      color: #fff;
+      text-align: left;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+
+  /* =================== Homepage - The Vision ========================= */
+  .vision {
+    width: 100%;
+    background: #00923F15;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    height: 180px;
+    margin-bottom: 30px;
+  }
+
+  .vision img {
+    height: 50px;
+    margin-right: 20px;
+  }
+
+  .vision div h3 {
+    font-weight: 600;
+    font-size: 1.8rem;
+  }
+
+  .vision div p {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+  }
+
+@media (max-width: 992px) {
+  html,
+  body {
+    font-size: 15px;
+  }
+}
