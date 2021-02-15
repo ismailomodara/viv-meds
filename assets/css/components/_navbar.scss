@@ -83,6 +83,10 @@
     }
   }
 
+  &__menu-toggler {
+    display: none;
+  }
+
   &__links {
     margin: 0;
     padding: 0;
@@ -205,14 +209,14 @@
 @media (max-width: 1024px) {
   .vm-navbar {
     padding: 0 0 20px;
-  }
 
-  .vm-navbar__links {
-    display: none !important;
-  }
+    &__menu-toggler {
+      display: block !important
+    }
 
-  .vm-mobile--menu__toggler {
-    display: block !important
+    &__links {
+      display: none !important;
+    }
   }
 }
 
@@ -232,6 +236,10 @@
 
 @media (max-width: 600px) {
   .vm-navbar {
+    &.hide-strip {
+      transform: translate3d(0, 0, 0) !important;
+    }
+
     &__logo {
       img {
         height: 45px;

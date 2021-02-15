@@ -47,7 +47,7 @@
             ><div :class="['vm-navbar__logo', { show: hideNavbarStrip }]">
               <img :src="getImage('vivmeds-logo-white.svg')" alt="" /></div
           ></nuxt-link>
-          <div @click="toggleNav">
+          <div class="vm-navbar__menu-toggler" @click="toggleNav">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -167,11 +167,6 @@ export default {
   },
   watch: {
     $route() {
-      document
-        .querySelector('.vm-mobile--menu__toggler')
-        .classList.remove('active')
-      document.querySelector('.vm-navbar-mobile').classList.remove('open')
-      document.querySelector('body').classList.remove('mobile-nav')
       this.page = this.$route.path
     },
   },
