@@ -1,7 +1,11 @@
 export default {
   methods: {
-    getImage(image) {
-      return require(`@/assets/img/${image}`)
+    getImage(image, folder) {
+      if (folder) {
+        return require(`@/assets/img/${folder}/${image}`)
+      } else {
+        return require(`@/assets/img/${image}`)
+      }
     },
   },
 }

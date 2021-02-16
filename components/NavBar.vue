@@ -123,7 +123,7 @@
 </template>
 
 <script>
-import image from '../mixin/image'
+import image from '@/mixin/image'
 
 export default {
   name: 'Navigation',

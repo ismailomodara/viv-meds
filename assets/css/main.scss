@@ -3,6 +3,10 @@
 @import "theme";
 @import "typography";
 
+* {
+  box-sizing: border-box;
+}
+
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -233,164 +237,6 @@ a:hover {
     }
   }
 }
-
-  /* =================== Video Player ========================= */
-.el-dialog {
-  background: transparent;
-  box-shadow: none;
-  height: 70vh;
-  margin-top: 0 !important;
-  top: 50%;
-  transform: translateY(-50%);
-
-  .el-dialog__body {
-    height: 100%;
-
-    iframe {
-      height: 100%;
-      width: 100%;
-    }
-  }
-
-  .el-dialog__header {
-    background: transparent;
-    box-shadow: none;
-
-    .el-dialog__headerbtn {
-      .el-dialog__close {
-        color: #fff;
-        font-weight: 700;
-        font-size: 1.4rem;
-      }
-    }
-  }
-}
-  /* =================== Section ========================= */
-  .ms-section {
-    padding: 40px 0;
-    background: #fff;
-  }
-
-  .ms-section.grey {
-    background: #EDEDED;
-  }
-
-  .ms-section--heading {
-    position: relative;
-    max-width: 1200px;
-    margin: auto auto 40px;
-
-    h3 {
-      margin-bottom: 20px;
-      position: relative;
-
-      &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 130%;
-        height: 8px;
-        width: 40px;
-        border-bottom-left-radius: 4px;
-        background: #58bb8c;
-      }
-    }
-
-    &.inverse {
-      h3 {
-        color: #fff;
-
-        &::after {
-          background: #FCB320;
-        }
-      }
-    }
-
-    p {
-      opacity: 1;
-      font-weight: 500;
-      margin-top: 40px;
-      text-align: justify;
-    }
-  }
-
-  .ms-img-title-text img {
-    margin-bottom: 20px;
-  }
-
-  .ms-img-title-text h3 {
-    color: #000;
-    margin-bottom: 15px;
-  }
-
-  .ms-img-title-text p {
-    color: #8E8E8E;
-    font-size: 0.75rem;
-  }
-
-  /* =================== Other Page Header ========================= */
-.ms-header--other {
-  position: relative;
-  height: calc(60vh + 100px);
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-
-  .ms-header--other__bg {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-
-    img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      animation: scale 10000ms ease-in-out forwards;
-    }
-  }
-
-  .ms-header--other__content {
-    position: relative;
-    z-index: 1;
-
-    h1 {
-      color: #fff;
-      text-align: left;
-      margin-bottom: 15px;
-    }
-  }
-}
-
-
-  /* =================== Homepage - The Vision ========================= */
-  .vision {
-    width: 100%;
-    background: #00923F15;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    padding: 0 30px;
-    height: 180px;
-    margin-bottom: 30px;
-  }
-
-  .vision img {
-    height: 50px;
-    margin-right: 20px;
-  }
-
-  .vision div h3 {
-    font-weight: 600;
-    font-size: 1.8rem;
-  }
-
-  .vision div p {
-    font-size: 1.1rem;
-    margin-bottom: 0;
-  }
 
 @media (max-width: 992px) {
   html,
