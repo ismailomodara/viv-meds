@@ -1,4 +1,4 @@
 import Vue from 'vue'
-import { Carousel, Slide } from 'vue-carousel'
+import carousel from 'vue-owl-carousel'
 
-Vue.use(Carousel, Slide)
+Vue.use(carousel)

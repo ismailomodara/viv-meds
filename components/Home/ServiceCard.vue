@@ -102,4 +102,10 @@ export default {
     font-size: 1.3rem;
   }
 }
+
+@media (max-width: 600px) {
+  .vm-service-card__image {
+    height: 200px;
+  }
+}
 </style>

@@ -1,18 +1,6 @@
 <template>
   <div>
-    <Header />
-    <el-container class="vm-section">
-      <el-row type="flex" class="vm-home-actions">
-        <el-col v-for="(cta, i) in ctas" :key="i" :xs="12" :sm="6" :md="6">
-          <div class="vm-home-action">
-            <div class="vm-home-action__icon">
-              <img :src="getImage(`${cta.icon}.svg`, 'home')" :alt="cta.icon" />
-            </div>
-            <p>{{ cta.title }}</p>
-          </div>
-        </el-col>
-      </el-row>
-    </el-container>
+    <PageHeader :image="image" :image-folder="imageFolder" />
     <el-container class="vm-section">
       <div class="vm-section__heading">
         <h2>Our Services</h2>
@@ -34,10 +22,7 @@
         </el-col>
       </el-row>
     </el-container>
-    <Testimonials />
     <Newsletter />
-    <GetDirections />
-    <ContactUs />
     <Footer />
   </div>
 </template>
@@ -46,46 +31,24 @@
 import image from '@/mixin/image'
 import config from '@/mixin/services-config'
 
-import Header from '@/components/Home/Header'
+import PageHeader from '@/components/Website/PageHeader'
 import ServiceCard from '@/components/Home/ServiceCard'
-import Testimonials from '@/components/Website/Testimonials'
 import Newsletter from '@/components/Website/Newsletter'
-import GetDirections from '@/components/Home/GetDirections'
-import ContactUs from '@/components/Website/ContactUs'
 import Footer from '@/components/Website/Footer'
 
 export default {
-  name: 'Home',
+  name: 'OurServices',
   components: {
-    Header,
+    PageHeader,
     ServiceCard,
-    Testimonials,
     Newsletter,
-    GetDirections,
-    ContactUs,
     Footer,
   },
   mixins: [image],
   data() {
     return {
-      ctas: [
-        {
-          icon: 'transfer',
-          title: 'Transfer your Prescriptions',
-        },
-        {
-          icon: 'refill',
-          title: 'Refill Prescriptions',
-        },
-        {
-          icon: 'auto-refill',
-          title: 'Automatic Refill Request',
-        },
-        {
-          icon: 'schedule',
-          title: 'Schedule a Wellness Consultation',
-        },
-      ],
+      image: 'medication-therapy.jpg',
+      imageFolder: 'services',
       services: config.services,
     }
   },
