@@ -69,6 +69,24 @@ p {
   }
 }
 
+.vm-section__paragraph {
+  margin-bottom: 30px;
+
+  h3 {
+    color: #6A8B2C;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+
+    + p {
+      margin-top: 20px;
+    }
+  }
+}
+
 @media (max-width: 400px) {
   .vm-section__heading {
     margin-bottom: 20px;
