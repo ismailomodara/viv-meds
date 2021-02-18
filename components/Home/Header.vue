@@ -17,7 +17,7 @@
           @click="setActive(index)"
         >
           <div class="overlay"></div>
-          <img :src="getImage(`${slide.image}.jpg`, 'home')" alt="" />
+          <img :src="getImage(`${slide.image}.jpg`, 'services')" alt="" />
           <div
             :class="[
               'vm-hero__container-content',
@@ -88,7 +88,7 @@
         class="vm-hero__container next"
         @click="activeImage = 1"
       >
-        <img :src="getImage(`${slider[1].image}.jpg`, 'home')" alt="" />
+        <img :src="getImage(`${slider[1].image}.jpg`, 'services')" alt="" />
       </div>
       <div class="vm-hero__dots">
         <span

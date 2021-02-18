@@ -24,7 +24,7 @@ body {
   font-weight: normal;
   scroll-behavior: smooth;
   line-height: 1.5;
-  background: #f4faf7;
+  background: #FCFCFC;
   width: 100%;
   height: 100%;
   padding: 0;
@@ -44,7 +44,6 @@ body {
   font-weight: 700;
 }
 
-.ms-section--heading,
 .el-container {
   max-width: 90% !important;
   margin: auto;
@@ -140,9 +139,7 @@ a:hover {
 
   /* =================== El Button ========================= */
 .el-button {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  padding: 15px 35px !important;
 
   &:hover {
     position: relative;
@@ -151,28 +148,21 @@ a:hover {
     transition: all 0.2s ease-out;
   }
 
+  &.is-round {
+    border-radius: 100px;
+  }
+
   &.el-button--secondary,
   &.el-button--secondary:hover,
   &.el-button--secondary:focus {
-    background: #FCB320;
-    border-color: #FCB320;
+    background: #fdc500;
+    border-color: #fdc500;
     color: #fff;
   }
 
   a {
     color: #fff !important;
   }
-}
-
-.ms-to-bottom .el-button i {
-  font-weight: 600;
-  font-size: 1.2rem;
-  animation: fadeInDown 2s ease-in infinite;
-}
-
-.ms-back-to-top .el-button i {
-  font-weight: 600;
-  font-size: 1.2rem;
 }
 
 @keyframes fadeInDown {
@@ -200,6 +190,11 @@ a:hover {
     transform: scale(0.9);
   }
 }
+  /* =================== Form ========================= */
+.el-form-item__label {
+  color: #ffffff;
+}
+
   /* =================== Accordion ========================= */
 .el-collapse-item {
   .el-collapse-item__header {

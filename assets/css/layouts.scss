@@ -114,9 +114,19 @@
   flex-wrap: wrap !important;
 }
 
+.vm-section {
+  padding: 60px 0;
+  flex-direction: column;
+}
 
 @media (max-width: 1024px) {
   .hidden-md-and-down {
     display: none !important
+  }
+}
+
+@media (max-width: 400px) {
+  .vm-section {
+    padding: 30px 0;
   }
 }
