@@ -18,7 +18,13 @@
         <h2>Our Services</h2>
       </div>
       <el-row type="flex" :gutter="30" class="flex-wrap">
-        <el-col v-for="(service, i) in services" :key="i" :md="12" :lg="8">
+        <el-col
+          v-for="(service, i) in services"
+          :key="i"
+          :sm="12"
+          :md="12"
+          :lg="8"
+        >
           <ServiceCard
             image-folder="services"
             :image="service.image"
@@ -32,6 +38,7 @@
     <Newsletter />
     <GetDirections />
     <ContactUs />
+    <Footer />
   </div>
 </template>
 
@@ -40,10 +47,11 @@ import image from '@/mixin/image'
 
 import Header from '@/components/Home/Header'
 import ServiceCard from '@/components/Home/ServiceCard'
-import Testimonials from '@/components/General/Testimonials'
-import Newsletter from '@/components/General/Newsletter'
+import Testimonials from '@/components/Website/Testimonials'
+import Newsletter from '@/components/Website/Newsletter'
 import GetDirections from '@/components/Home/GetDirections'
-import ContactUs from '@/components/General/ContactUs'
+import ContactUs from '@/components/Website/ContactUs'
+import Footer from '@/components/Website/Footer'
 
 export default {
   name: 'Home',
@@ -54,6 +62,7 @@ export default {
     Newsletter,
     GetDirections,
     ContactUs,
+    Footer,
   },
   mixins: [image],
   data() {

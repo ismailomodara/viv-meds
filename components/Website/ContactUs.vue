@@ -61,4 +61,34 @@ export default {
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .vm-contact {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .vm-contact {
+    flex-direction: column;
+    width: 100%;
+
+    &__info {
+      margin-bottom: 40px;
+      p {
+        font-size: 1rem;
+        align-items: flex-start;
+
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
+
+        .label {
+          min-width: 80px;
+          display: block;
+        }
+      }
+    }
+  }
+}
 </style>

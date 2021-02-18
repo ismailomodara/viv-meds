@@ -96,4 +96,10 @@ export default {
     }
   }
 }
+
+@media (max-width: 992px) {
+  h3 {
+    font-size: 1.3rem;
+  }
+}
 </style>
