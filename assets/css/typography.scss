@@ -69,7 +69,7 @@ p {
   }
 }
 
-.vm-section__paragraph {
+.vm-section_content {
   margin-bottom: 30px;
 
   h3 {
@@ -78,11 +78,35 @@ p {
   }
 
   p {
-    font-size: 1.2rem;
+    font-size: 1.125rem;
     line-height: 1.8;
 
     + p {
       margin-top: 20px;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 30px 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      color: #292222;
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+
+      .icon {
+        height: 5px;
+        width: 5px;
+        background: #6A8B2C;
+        border-radius: 100px;
+        margin-right: 10px;
+      }
     }
   }
 }

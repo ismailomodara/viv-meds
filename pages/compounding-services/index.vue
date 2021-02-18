@@ -1,8 +1,8 @@
 <template>
   <div>
     <PageHeader :title="title" :image="image" :image-folder="imageFolder" />
-    <el-container class="vm-section">
-      <div class="vm-section__paragraph">
+    <el-container class="vm-section pb-0">
+      <div class="vm-section_content">
         <p>
           At Vivmeds Pharmacy, our top-notch compounding pharmacy lab
           specializes in tailored compounded medications designed with
@@ -11,7 +11,7 @@
           longer manufactured.
         </p>
       </div>
-      <div class="vm-section__paragraph">
+      <div class="vm-section_content">
         <h3>
           Deep Pharmaceutical Expertise In Delivering Quality Formulations
         </h3>
@@ -27,7 +27,7 @@
           commercial pharmaceuticals are not able to address.
         </p>
       </div>
-      <div class="vm-section__paragraph">
+      <div class="vm-section_content">
         <p>
           Vivmeds follows the U.S. Pharmacopeial Convention 800 (USP 800)
           guidelines for compounding in addition to being compliant with the
