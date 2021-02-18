@@ -17,7 +17,6 @@
                 placeholder="you@mail.com"
               ></el-input>
               <el-button
-                type="primary"
                 round
                 class="el-button--secondary ml-2"
                 :loading="subscribing"

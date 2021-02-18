@@ -36,6 +36,14 @@ p {
   line-height: 1.6;
 }
 
+.text-regular {
+  text-transform: none !important;
+}
+
+.text-black {
+  color: #292222 !important;
+}
+
 .vm-section__heading {
   margin-bottom: 40px;
   text-align: center;
@@ -45,7 +53,7 @@ p {
     font-size: 2rem;
     text-transform: uppercase;
     margin-bottom: 15px;
-    color: #8B882C
+    color: #8B882C;
   }
 
   p {

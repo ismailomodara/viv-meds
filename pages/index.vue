@@ -30,6 +30,8 @@
     </el-container>
     <Testimonials />
     <Newsletter />
+    <GetDirections />
+    <ContactUs />
   </div>
 </template>
 
@@ -40,6 +42,8 @@ import Header from '@/components/Home/Header'
 import ServiceCard from '@/components/Home/ServiceCard'
 import Testimonials from '@/components/General/Testimonials'
 import Newsletter from '@/components/General/Newsletter'
+import GetDirections from '@/components/Home/GetDirections'
+import ContactUs from '@/components/General/ContactUs'
 
 export default {
   name: 'Home',
@@ -48,6 +52,8 @@ export default {
     ServiceCard,
     Testimonials,
     Newsletter,
+    GetDirections,
+    ContactUs,
   },
   mixins: [image],
   data() {
