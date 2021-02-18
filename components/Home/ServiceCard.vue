@@ -78,7 +78,7 @@ export default {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    height: 120px;
+    height: 140px;
 
     h3 {
       color: #292222;
@@ -106,6 +106,10 @@ export default {
 @media (max-width: 600px) {
   .vm-service-card__image {
     height: 200px;
+  }
+
+  .vm-service-card__content {
+    height: 120px;
   }
 }
 </style>

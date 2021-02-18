@@ -1,7 +1,7 @@
 <template>
   <div class="vm-page-header">
     <el-container>
-      <div v-if="title" class="vm-page-heading__title">
+      <div v-if="title" class="vm-page-header__title">
         <h2>{{ title }}</h2>
       </div>
       <div class="vm-page-header__image">
@@ -39,8 +39,11 @@ export default {
 
 <style scoped lang="scss">
 .vm-page-header {
-  height: 100vh;
   padding: 230px 0 30px;
+
+  .el-container {
+    flex-direction: column;
+  }
 
   &__title {
     h2 {

@@ -168,6 +168,8 @@ export default {
   watch: {
     $route() {
       this.page = this.$route.path
+      this.showMobileNav = false
+      document.body.style.setProperty('overflow', 'visible', 'important')
     },
   },
   mounted() {

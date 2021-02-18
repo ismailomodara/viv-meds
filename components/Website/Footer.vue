@@ -10,7 +10,9 @@
         <el-col :md="6" :lg="6">
           <div class="vm-footer__section">
             <h5>Services</h5>
-            <nuxt-link to="/">Compounding Services</nuxt-link>
+            <nuxt-link to="/compounding-services"
+              >Compounding Services</nuxt-link
+            >
             <nuxt-link to="/">Point-Of-Care Testing Services</nuxt-link>
             <nuxt-link to="/">Diabetes Management</nuxt-link>
             <nuxt-link to="/">Medication Therapy Management</nuxt-link>
