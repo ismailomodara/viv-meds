@@ -3,7 +3,7 @@
     <el-container>
       <div class="vm-schedule__info">
         <p>
-          To learn more about our {{ title }}, please<br />
+          To learn more about our {{ type }}, please<br />
           <span>Schedule a Free Consultation</span> with the Pharmacist or
           <br />Call us at <span>940-226-4849</span>
         </p>
@@ -21,7 +21,7 @@
 export default {
   name: 'ScheduleConsultation',
   props: {
-    title: {
+    type: {
       type: String,
       default: '',
     },

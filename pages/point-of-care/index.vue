@@ -13,22 +13,19 @@
         </p>
         <ul>
           <li>
-            <span class="icon"></span
-            ><span
+            <span
               >34.2 million people of all ages—or 10.5% of the US population—had
               diabetes.</span
             >
           </li>
           <li>
-            <span class="icon"></span
-            ><span
+            <span
               >34.1 million adults aged 18 years or older—or 13.0% of all US
               adults—had diabetes.</span
             >
           </li>
           <li>
-            <span class="icon"></span
-            ><span
+            <span
               >7.3 million adults aged 18 years or older who met laboratory
               criteria for diabetes were not aware of or did not report having
               diabetes (undiagnosed diabetes)</span

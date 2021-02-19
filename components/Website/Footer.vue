@@ -16,7 +16,7 @@
             <nuxt-link to="/point-of-care"
               >Point-Of-Care Testing Services</nuxt-link
             >
-            <nuxt-link to="/">Diabetes Management</nuxt-link>
+            <nuxt-link to="/diabetes-management">Diabetes Management</nuxt-link>
             <nuxt-link to="/">Medication Therapy Management</nuxt-link>
             <nuxt-link to="/">Immunizations</nuxt-link>
             <nuxt-link to="/">Integrative Medicine</nuxt-link>

@@ -72,7 +72,7 @@ p {
 .vm-section_content {
   margin-bottom: 30px;
 
-  h3 {
+  h3, h4 {
     color: #6A8B2C;
     margin-bottom: 15px;
   }
@@ -91,21 +91,27 @@ p {
     margin: 30px 0;
 
     li {
-      display: flex;
-      align-items: center;
-      font-weight: bold;
       color: #292222;
+      position: relative;
+      padding-left: 20px;
 
       &:not(:last-child) {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
       }
 
-      .icon {
-        height: 5px;
-        width: 5px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 0;
+        height: 7px;
+        width: 7px;
         background: #6A8B2C;
         border-radius: 100px;
-        margin-right: 10px;
+      }
+
+      span {
+        font-weight: 600;
       }
     }
   }
