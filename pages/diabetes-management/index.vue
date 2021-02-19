@@ -5,7 +5,39 @@
       <div class="vm-section_content">
         <p>Among the US population overall, crude estimates for 2018 were:</p>
       </div>
-      <div class="vm-section_content"></div>
+      <div class="vm-section_content">
+        <div class="vm-chart__info">
+          <PieChart :percentage="10.5" />
+          <p>
+            34.2 million people of all ages for 10.5% of the US population had
+            diabetes
+          </p>
+        </div>
+        <div class="vm-chart__info">
+          <PieChart :percentage="13.0" />
+          <p>
+            34.1 million adults aged 18 years or older - or 13.0% of all US
+            adults had diabetes
+          </p>
+        </div>
+        <div class="vm-chart__info">
+          <PieChart :percentage="2.8" />
+          <PieChart :percentage="21.4" />
+          <p>
+            7.3 million adults aged 18 years or older who met laboratory
+            criteria for diabetes were not aware or did not report having
+            diabetes. This number represents 2.8% of all US adults and 21.4% of
+            all US adults with diabetes.
+          </p>
+        </div>
+        <div class="vm-chart__info">
+          <PieChart :percentage="26.8" />
+          <p>
+            The percentage of adults with diabetes increased with age, reaching
+            26.8% among those aged 65 years or older.
+          </p>
+        </div>
+      </div>
     </el-container>
     <el-container class="vm-section pb-0">
       <div class="vm-section_content">
@@ -104,6 +136,7 @@
 import image from '@/mixin/image'
 
 import PageHeader from '@/components/Website/PageHeader'
+import PieChart from '@/components/Website/PieChart'
 import ScheduleConsultation from '@/components/Website/ScheduleConsultation'
 import Footer from '@/components/Website/Footer'
 
@@ -111,6 +144,7 @@ export default {
   name: 'DiabetesManagement',
   components: {
     PageHeader,
+    PieChart,
     ScheduleConsultation,
     Footer,
   },
@@ -125,4 +159,40 @@ export default {
 }
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.vm-chart__info {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  > p {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .vm-chart__info {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .vm-chart__info {
+    flex-direction: column;
+
+    > div {
+      margin-bottom: 10px;
+    }
+
+    > p {
+      margin: 10px 0 0;
+      font-size: 0.875rem;
+    }
+  }
+}
+</style>

@@ -53,7 +53,7 @@ export default {
   }
 
   &__image {
-    height: 100%;
+    height: 70vh;
     width: 100%;
 
     img {
@@ -66,7 +66,7 @@ export default {
 
 @media (max-width: 1024px) {
   .vm-page-header {
-    height: 50vh;
+    height: auto;
 
     &__image {
       height: 100%;
@@ -77,7 +77,7 @@ export default {
 @media (max-width: 600px) {
   .vm-page-header {
     padding: 100px 0 0;
-    height: 50vh;
+    height: auto;
 
     &__image {
       height: 100%;
