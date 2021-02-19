@@ -2,11 +2,7 @@
   <div class="vm-schedule">
     <el-container>
       <div class="vm-schedule__info">
-        <p>
-          To learn more about our {{ type }}, please<br />
-          <span>Schedule a Free Consultation</span> with the Pharmacist or
-          <br />Call us at <span>940-226-4849</span>
-        </p>
+        <p><slot /></p>
       </div>
       <div class="vm-newsletter__action">
         <el-button round class="el-button--secondary"
@@ -36,7 +32,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .vm-schedule {
   height: 200px;
   background: #6a8b2c;
@@ -58,7 +54,7 @@ export default {
       font-weight: 600;
 
       span {
-        color: #fdc500;
+        color: #fdc500 !important;
         text-decoration: underline;
       }
     }

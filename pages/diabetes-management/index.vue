@@ -127,7 +127,13 @@
         </p>
       </div>
     </el-container>
-    <ScheduleConsultation type="Diabetes Care Options" />
+    <ScheduleConsultation>
+      <template>
+        To learn more about our Diabetes Care Options,<br />
+        <span>Schedule a Free Consultation</span> with the Pharmacist or
+        <br />Call us at <span>940-226-4849</span>
+      </template>
+    </ScheduleConsultation>
     <Footer />
   </div>
 </template>

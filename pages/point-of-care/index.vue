@@ -40,7 +40,12 @@
         </p>
       </div>
     </el-container>
-    <ScheduleConsultation />
+    <ScheduleConsultation>
+      <template>
+        <span>Schedule a Free Consultation</span> with the Pharmacist or
+        <br />Call us at <span>940-226-4849</span>
+      </template>
+    </ScheduleConsultation>
     <el-container class="vm-section">
       <div class="vm-section_content">
         <p>
