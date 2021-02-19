@@ -199,12 +199,14 @@ a:hover {
 
   /* =================== Accordion ========================= */
 .el-collapse-item {
+  margin-bottom: 25px;
+
   .el-collapse-item__header {
     line-height: 1.6;
-    border-left: 5px solid #58bb8c;
-    padding-left: 15px;
+    background: #f0ffd4;
+    padding: 40px;
     font-size: 1rem;
-    height: 70px;
+    font-weight: 600;
   }
 
   &.inverse .el-collapse-item__header {

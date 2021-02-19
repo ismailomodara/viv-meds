@@ -21,9 +21,9 @@ export default {
       link: 'medication-therapy-management',
     },
     {
-      image: 'immunization.jpg',
+      image: 'immunizations.jpg',
       title: 'Immunizations',
-      link: 'immunization',
+      link: 'immunizations',
     },
     {
       image: 'integrative-medicine.jpg',

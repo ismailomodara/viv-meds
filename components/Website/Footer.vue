@@ -20,7 +20,7 @@
             <nuxt-link to="/medication-therapy-management"
               >Medication Therapy Management</nuxt-link
             >
-            <nuxt-link to="/">Immunizations</nuxt-link>
+            <nuxt-link to="/immunizations">Immunizations</nuxt-link>
             <nuxt-link to="/integrative-medicine"
               >Integrative Medicine</nuxt-link
             >
