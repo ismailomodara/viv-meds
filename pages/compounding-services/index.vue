@@ -60,23 +60,20 @@
     </el-container>
     <ScheduleConsultation>
       <template>
-        To learn more about our Compounding Services, please
+        To learn more about our Compounding Services <br />
         <span>Schedule a Free Consultation</span> with the Pharmacist or
         <br />Call us at <span>940-226-4849</span>
       </template>
     </ScheduleConsultation>
-    <Footer />
   </div>
 </template>
 
 <script>
-import image from '@/mixin/image'
 import config from '@/mixin/services-config'
 
 import PageHeader from '@/components/Website/PageHeader'
 import ServiceCard from '@/components/Home/ServiceCard'
 import ScheduleConsultation from '@/components/Website/ScheduleConsultation'
-import Footer from '@/components/Website/Footer'
 
 export default {
   name: 'CompoundingServices',
@@ -84,9 +81,7 @@ export default {
     PageHeader,
     ServiceCard,
     ScheduleConsultation,
-    Footer,
   },
-  mixins: [image],
   data() {
     return {
       title: 'Compounding Services',

@@ -5,9 +5,9 @@
         <p><slot /></p>
       </div>
       <div class="vm-newsletter__action">
-        <el-button round class="el-button--secondary"
-          >Schedule a Free Consultation</el-button
-        >
+        <el-button round class="el-button--secondary">{{
+          buttonText || 'Schedule a Free Consultation'
+        }}</el-button>
       </div>
     </el-container>
   </div>
@@ -17,7 +17,7 @@
 export default {
   name: 'ScheduleConsultation',
   props: {
-    type: {
+    buttonText: {
       type: String,
       default: '',
     },

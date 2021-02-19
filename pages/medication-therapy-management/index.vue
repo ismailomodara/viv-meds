@@ -144,25 +144,19 @@
         >
       </div>
     </el-container>
-    <Footer />
   </div>
 </template>
 
 <script>
-import image from '@/mixin/image'
-
 import PageHeader from '@/components/Website/PageHeader'
 import ScheduleConsultation from '@/components/Website/ScheduleConsultation'
-import Footer from '@/components/Website/Footer'
 
 export default {
   name: 'MedicationTherapyManagement',
   components: {
     PageHeader,
     ScheduleConsultation,
-    Footer,
   },
-  mixins: [image],
   data() {
     return {
       title: 'Medication Therapy Management',

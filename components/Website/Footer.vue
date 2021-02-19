@@ -21,7 +21,9 @@
               >Medication Therapy Management</nuxt-link
             >
             <nuxt-link to="/">Immunizations</nuxt-link>
-            <nuxt-link to="/">Integrative Medicine</nuxt-link>
+            <nuxt-link to="/integrative-medicine"
+              >Integrative Medicine</nuxt-link
+            >
           </div>
         </el-col>
         <el-col :md="7" :lg="7">
@@ -148,7 +150,7 @@ export default {
 
     a {
       color: #292222;
-      display: inline-block;
+      display: block;
       margin-bottom: 15px;
     }
 

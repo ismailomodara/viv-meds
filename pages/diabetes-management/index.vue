@@ -134,17 +134,13 @@
         <br />Call us at <span>940-226-4849</span>
       </template>
     </ScheduleConsultation>
-    <Footer />
   </div>
 </template>
 
 <script>
-import image from '@/mixin/image'
-
 import PageHeader from '@/components/Website/PageHeader'
 import PieChart from '@/components/Website/PieChart'
 import ScheduleConsultation from '@/components/Website/ScheduleConsultation'
-import Footer from '@/components/Website/Footer'
 
 export default {
   name: 'DiabetesManagement',
@@ -152,9 +148,7 @@ export default {
     PageHeader,
     PieChart,
     ScheduleConsultation,
-    Footer,
   },
-  mixins: [image],
   data() {
     return {
       title: 'Diabetes Management',

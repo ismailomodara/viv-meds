@@ -128,25 +128,19 @@
         </p>
       </div>
     </el-container>
-    <Footer />
   </div>
 </template>
 
 <script>
-import image from '@/mixin/image'
-
 import PageHeader from '@/components/Website/PageHeader'
 import ScheduleConsultation from '@/components/Website/ScheduleConsultation'
-import Footer from '@/components/Website/Footer'
 
 export default {
   name: 'PointOfCare',
   components: {
     PageHeader,
     ScheduleConsultation,
-    Footer,
   },
-  mixins: [image],
   data() {
     return {
       title: 'Point-Of-Care Testing Services',

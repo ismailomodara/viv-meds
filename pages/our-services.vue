@@ -23,7 +23,6 @@
       </el-row>
     </el-container>
     <Newsletter />
-    <Footer />
   </div>
 </template>
 
@@ -34,7 +33,6 @@ import config from '@/mixin/services-config'
 import PageHeader from '@/components/Website/PageHeader'
 import ServiceCard from '@/components/Home/ServiceCard'
 import Newsletter from '@/components/Website/Newsletter'
-import Footer from '@/components/Website/Footer'
 
 export default {
   name: 'OurServices',
@@ -42,7 +40,6 @@ export default {
     PageHeader,
     ServiceCard,
     Newsletter,
-    Footer,
   },
   mixins: [image],
   data() {

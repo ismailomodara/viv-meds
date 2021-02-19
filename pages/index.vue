@@ -38,7 +38,6 @@
     <Newsletter />
     <GetDirections />
     <ContactUs />
-    <Footer />
   </div>
 </template>
 
@@ -52,7 +51,6 @@ import Testimonials from '@/components/Website/Testimonials'
 import Newsletter from '@/components/Website/Newsletter'
 import GetDirections from '@/components/Home/GetDirections'
 import ContactUs from '@/components/Website/ContactUs'
-import Footer from '@/components/Website/Footer'
 
 export default {
   name: 'Home',
@@ -63,7 +61,6 @@ export default {
     Newsletter,
     GetDirections,
     ContactUs,
-    Footer,
   },
   mixins: [image],
   data() {
