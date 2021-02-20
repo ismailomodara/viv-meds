@@ -135,10 +135,10 @@ export default {
           image: 'diabetes',
         },
         {
-          title: 'Immunization',
+          title: 'Immunizations',
           description:
             'We have the CDC-recommended vaccines you need, administered by an immunization-trained pharmacist.',
-          image: 'immunization',
+          image: 'immunizations',
         },
         {
           title: 'Integrative Medicine',
