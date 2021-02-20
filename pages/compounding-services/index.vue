@@ -59,7 +59,7 @@
       </el-row>
     </el-container>
     <ScheduleConsultation>
-      <template>
+      <template slot="default">
         To learn more about our Compounding Services <br />
         <span>Schedule a Free Consultation</span> with the Pharmacist or
         <br />Call us at <span>940-226-4849</span>

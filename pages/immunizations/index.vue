@@ -11,7 +11,7 @@
       </div>
     </el-container>
     <ScheduleConsultation button-text="Schedule Vaccination">
-      <template>
+      <template slot="default">
         <span>Schedule a Free Consultation</span> with the Pharmacist or
         <br />Call us at <span>940-226-4849</span>
       </template>
@@ -54,11 +54,11 @@
             <el-collapse-item
               v-for="(vaccination, i) in vaccinations"
               :key="i"
-              :title="vaccination"
+              :title="vaccination.title"
               :name="i + 1"
             >
               <div>
-                <p>Form</p>
+                <component :is="vaccination.component"></component>
               </div>
             </el-collapse-item>
           </el-collapse>
@@ -72,27 +72,68 @@
 import PageHeader from '@/components/Website/PageHeader'
 import ScheduleConsultation from '@/components/Website/ScheduleConsultation'
 
+import Influenza from '@/components/Immunizations/Influenza'
+import Tetanus from '@/components/Immunizations/Tetanus'
+import Hepatitis from '@/components/Immunizations/Hepatitis'
+import ChickenPox from '@/components/Immunizations/ChickenPox'
+import HumanPapilloma from '@/components/Immunizations/HumanPapilloma'
+import Pneumococcal from '@/components/Immunizations/Pneumococcal'
+import Measles from '@/components/Immunizations/Measles'
+import Hingles from '@/components/Immunizations/Hingles'
+
 export default {
   name: 'Immunizations',
   components: {
     PageHeader,
     ScheduleConsultation,
+    Influenza,
+    Tetanus,
+    Hepatitis,
+    ChickenPox,
+    HumanPapilloma,
+    Pneumococcal,
+    Measles,
+    Hingles,
   },
   data() {
     return {
       title: 'Immunizations',
       image: 'immunizations.jpg',
       imageFolder: 'services',
-      activeVaccination: 1,
+      activeVaccination: '',
       vaccinations: [
-        'Influenza (flu) vaccine',
-        'Tetanus, Diphtheria, Pertussis (Tdap) vaccine',
-        'Hepatitis Vaccin',
-        'Chicken Pox vaccine',
-        'Human Papilloma virus (HPV)',
-        'Pneumococcal vaccine',
-        'Measles, Mumps, Rubella vaccine',
-        'Shingles (Herpes zoster virus)',
+        {
+          title: 'Influenza (flu) Vaccine',
+          component: 'influenza',
+        },
+        {
+          title: 'Tetanus, Diphtheria, Pertussis (Tdap) Vaccine',
+          component: 'tetanus',
+        },
+        {
+          title: 'Hepatitis Vaccine',
+          component: 'hepatitis',
+        },
+        {
+          title: 'Chicken Pox Vaccine',
+          component: 'chicken-pox',
+        },
+        {
+          title: 'Human Papilloma Virus (HPV)',
+          component: 'human-papilloma',
+        },
+        {
+          title: 'Pneumococcal Vaccine',
+          component: 'pneumococcal',
+        },
+        {
+          title: 'Measles, Mumps, and Rubella Vaccine',
+          component: 'measles',
+        },
+        {
+          title: 'Hingles (Herpes zoster virus)',
+          component: 'hingles',
+        },
       ],
     }
   },

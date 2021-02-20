@@ -45,7 +45,7 @@
       </div>
     </el-container>
     <ScheduleConsultation button-text="Schedule Appointment">
-      <template>
+      <template slot="default">
         Are you ready to take control of your health? Now is the time for
         your<br />
         health. Call today to schedule your appointment.

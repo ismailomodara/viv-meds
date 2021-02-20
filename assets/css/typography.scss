@@ -36,12 +36,21 @@ p {
   line-height: 1.6;
 }
 
+a {
+  color: #6A8B2C;
+  text-decoration: none;
+}
+
 .text-regular {
   text-transform: none !important;
 }
 
 .text-black {
   color: #292222 !important;
+}
+
+.text-bold {
+  font-weight: 700 !important;
 }
 
 .text-left {
@@ -83,7 +92,7 @@ p {
 
   p {
     font-size: 1.125rem;
-    line-height: 1.8;
+    line-height: 2;
 
     + p {
       margin-top: 20px;
@@ -131,6 +140,13 @@ p {
 
     p {
       width: 100% !important;
+    }
+  }
+
+  .vm-section_content {
+    p {
+      font-size: 0.875rem !important;
+      text-align: justify;
     }
   }
 }

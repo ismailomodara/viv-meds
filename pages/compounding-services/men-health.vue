@@ -81,7 +81,7 @@
       </div>
     </el-container>
     <ScheduleConsultation button-text="Contact">
-      <template
+      <template slot="default"
         >To learn more about our services <br />
         please contact us at <span>940-226-4849</span></template
       >
