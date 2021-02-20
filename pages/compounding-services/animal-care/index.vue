@@ -14,7 +14,7 @@
             image-folder="compounding/animal-care"
             :image="service.image"
             :title="service.title"
-            :link="`${service.link}`"
+            :link="`animal-care/${service.link}`"
           />
         </el-col>
       </el-row>
@@ -23,6 +23,7 @@
 </template>
 
 <script>
+import config from '@/mixin/services-config'
 import PageHeader from '@/components/Website/PageHeader'
 
 export default {
@@ -35,28 +36,7 @@ export default {
       title: 'Animal Care',
       image: 'animal-care.jpg',
       imageFolder: 'compounding',
-      services: [
-        {
-          title: 'Canine Product Guide',
-          image: 'canine-product-guide.jpg',
-          link: '',
-        },
-        {
-          title: 'Equine Product Guide',
-          image: 'equine-product-guide.jpg',
-          link: '',
-        },
-        {
-          title: 'Feline Product Guide',
-          image: 'feline-product-guide.jpg',
-          link: '',
-        },
-        {
-          title: 'Veterinary Compound & Pet Medications',
-          image: 'veterinary-compound.jpg',
-          link: '',
-        },
-      ],
+      services: config.animalCare,
     }
   },
 }

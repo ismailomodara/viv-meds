@@ -32,10 +32,12 @@
         <el-col :md="6" :lg="6">
           <div class="vm-footer__section">
             <h5>Animal Care</h5>
-            <nuxt-link to="/">Canine Product Guide</nuxt-link>
-            <nuxt-link to="/">Equine Product Guide</nuxt-link>
-            <nuxt-link to="/">Feline Product Guide</nuxt-link>
-            <nuxt-link to="/">Vet Compounds</nuxt-link>
+            <nuxt-link
+              v-for="(service, i) in animalCare"
+              :key="i"
+              :to="`/compounding-services/animal-care/${service.link}`"
+              >{{ service.title }}</nuxt-link
+            >
           </div>
         </el-col>
       </el-row>
@@ -114,6 +116,7 @@ export default {
     return {
       services: config.services,
       compoundingServices: config.compoundingServices,
+      animalCare: config.animalCare,
     }
   },
   methods: {},

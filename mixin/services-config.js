@@ -88,4 +88,26 @@ export default {
       link: 'animal-care',
     },
   ],
+  animalCare: [
+    {
+      title: 'Canine Product Guide',
+      image: 'canine-product-guide.jpg',
+      link: 'canine',
+    },
+    {
+      title: 'Equine Product Guide',
+      image: 'equine-product-guide.jpg',
+      link: 'equine',
+    },
+    {
+      title: 'Feline Product Guide',
+      image: 'feline-product-guide.jpg',
+      link: 'feline',
+    },
+    {
+      title: 'Veterinary Compound & Pet Medications',
+      image: 'veterinary-compound.jpg',
+      link: 'veterinary',
+    },
+  ],
 }
