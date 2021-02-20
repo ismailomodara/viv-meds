@@ -158,7 +158,7 @@ export default {
         },
         {
           label: 'Contact',
-          url: '/contact',
+          url: '/contact-us',
         },
       ],
       showMobileNav: false,

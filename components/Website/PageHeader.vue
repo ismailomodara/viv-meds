@@ -4,7 +4,7 @@
       <div v-if="title" class="vm-page-header__title">
         <h2>{{ title }}</h2>
       </div>
-      <div class="vm-page-header__image">
+      <div v-if="image" class="vm-page-header__image">
         <img :src="getImage(image, imageFolder)" alt="" />
       </div>
     </el-container>
@@ -24,11 +24,11 @@ export default {
     },
     image: {
       type: String,
-      required: true,
+      default: '',
     },
     imageFolder: {
       type: String,
-      required: true,
+      default: '',
     },
   },
   data() {
