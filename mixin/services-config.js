@@ -40,47 +40,47 @@ export default {
     {
       image: 'compounding-medications-for-podiatry-concerns.jpg',
       title: 'Compounding Medications for Podiatry Concerns',
-      link: '',
+      link: 'podiatry',
     },
     {
       image: 'compounding-medications-for-women-health.jpg',
       title: 'Compounding Medications for Women’s Health',
-      link: '',
+      link: 'women-health',
     },
     {
       image: 'dentistry.jpg',
       title: 'Dentistry',
-      link: '',
+      link: 'dentistry',
     },
     {
       image: 'dermatology.jpg',
       title: 'Dermatology',
-      link: '',
+      link: 'dermatology',
     },
     {
       image: 'hospice-and-palliative-medicine.jpg',
       title: 'Hospice & Palliative Medicine',
-      link: '',
+      link: 'hospice',
     },
     {
       image: 'men-healthcare-and-wellness.jpg',
       title: "Men's Healthcare and Wellness",
-      link: '',
+      link: 'men-health',
     },
     {
       image: 'pain-management.jpg',
       title: 'Pain Management',
-      link: '',
+      link: 'pain-management',
     },
     {
       image: 'pediatrics.jpg',
       title: 'Pediatrics',
-      link: '',
+      link: 'pediatrics',
     },
     {
       image: 'wound-and-scar-therapy.jpg',
       title: 'Wound & Scar Therapy',
-      link: '',
+      link: 'wound-and-scar',
     },
     {
       image: 'animal-care.jpg',

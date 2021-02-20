@@ -53,7 +53,7 @@
             image-folder="compounding"
             :image="service.image"
             :title="service.title"
-            :link="service.link"
+            :link="`compounding-services/${service.link}`"
           />
         </el-col>
       </el-row>

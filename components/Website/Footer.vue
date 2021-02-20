@@ -10,38 +10,23 @@
         <el-col :md="6" :lg="6">
           <div class="vm-footer__section">
             <h5>Services</h5>
-            <nuxt-link to="/compounding-services"
-              >Compounding Services</nuxt-link
-            >
-            <nuxt-link to="/point-of-care"
-              >Point-Of-Care Testing Services</nuxt-link
-            >
-            <nuxt-link to="/diabetes-management">Diabetes Management</nuxt-link>
-            <nuxt-link to="/medication-therapy-management"
-              >Medication Therapy Management</nuxt-link
-            >
-            <nuxt-link to="/immunizations">Immunizations</nuxt-link>
-            <nuxt-link to="/integrative-medicine"
-              >Integrative Medicine</nuxt-link
+            <nuxt-link
+              v-for="(service, i) in services"
+              :key="i"
+              :to="`/${service.link}`"
+              >{{ service.title }}</nuxt-link
             >
           </div>
         </el-col>
         <el-col :md="7" :lg="7">
           <div class="vm-footer__section">
             <h5>Compounding Services</h5>
-            <nuxt-link to="/"
-              >Compounding Medications for Podiatry Conerns</nuxt-link
+            <nuxt-link
+              v-for="(service, i) in compoundingServices"
+              :key="i"
+              :to="`/compounding-services/${service.link}`"
+              >{{ service.title }}</nuxt-link
             >
-            <nuxt-link to="/"
-              >Compounding Medications for Women’s Health</nuxt-link
-            >
-            <nuxt-link to="/">Dentistry</nuxt-link>
-            <nuxt-link to="/">Dermatology</nuxt-link>
-            <nuxt-link to="/">Hospice & Palliative Medicine</nuxt-link>
-            <nuxt-link to="/">Men’s Healthcare & Wellness</nuxt-link>
-            <nuxt-link to="/">Pain Management</nuxt-link>
-            <nuxt-link to="/">Pediatrics</nuxt-link>
-            <nuxt-link to="/">Wound & Scar Therapy</nuxt-link>
           </div>
         </el-col>
         <el-col :md="6" :lg="6">
@@ -120,12 +105,16 @@
 
 <script>
 import image from '@/mixin/image'
+import config from '@/mixin/services-config'
 
 export default {
   name: 'Footer',
   mixins: [image],
   data() {
-    return {}
+    return {
+      services: config.services,
+      compoundingServices: config.compoundingServices,
+    }
   },
   methods: {},
 }
