@@ -51,10 +51,20 @@ body {
 
 .el-form {
   width: 100%;
+
+  .el-form-item__label {
+    color: #292222;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
 }
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.el-input {
+  width: 100% !important;
 }
 
 .el-input__inner {

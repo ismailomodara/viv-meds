@@ -132,8 +132,17 @@
 }
 
 .vm-section {
+  width: 100%;
   padding: 60px 0;
   flex-direction: column;
+}
+
+.vm-button__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
 }
 
 @media (max-width: 1024px) {

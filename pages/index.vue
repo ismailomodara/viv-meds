@@ -4,12 +4,17 @@
     <el-container class="vm-section">
       <el-row type="flex" class="vm-home-actions">
         <el-col v-for="(cta, i) in ctas" :key="i" :xs="12" :sm="6" :md="6">
-          <div class="vm-home-action">
-            <div class="vm-home-action__icon">
-              <img :src="getImage(`${cta.icon}.svg`, 'home')" :alt="cta.icon" />
+          <nuxt-link :to="`/prescriptions/${cta.link}`">
+            <div class="vm-home-action">
+              <div class="vm-home-action__icon">
+                <img
+                  :src="getImage(`${cta.icon}.svg`, 'home')"
+                  :alt="cta.icon"
+                />
+              </div>
+              <p>{{ cta.title }}</p>
             </div>
-            <p>{{ cta.title }}</p>
-          </div>
+          </nuxt-link>
         </el-col>
       </el-row>
     </el-container>
@@ -69,18 +74,22 @@ export default {
         {
           icon: 'transfer',
           title: 'Transfer your Prescriptions',
+          link: 'transfer',
         },
         {
           icon: 'refill',
           title: 'Refill Prescriptions',
+          link: 'request-refill',
         },
         {
           icon: 'auto-refill',
           title: 'Automatic Refill Request',
+          link: 'auto-refill',
         },
         {
           icon: 'schedule',
           title: 'Schedule a Wellness Consultation',
+          link: 'schedule-consultation',
         },
       ],
       services: config.services,
