@@ -210,7 +210,7 @@ export default {
   border: none;
   width: 800px !important;
   height: 420px !important;
-  background: transparent;
+  background: transparent !important;
 }
 
 .vm-testimonial {
@@ -224,8 +224,8 @@ export default {
   align-items: flex-start;
 
   img {
-    height: 80px;
-    width: 80px;
+    height: 80px !important;
+    width: 80px !important;
     border-radius: 1000px;
     object-fit: cover;
     margin-right: 20px;
