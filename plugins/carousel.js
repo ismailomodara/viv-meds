@@ -1,4 +1,4 @@
 import Vue from 'vue'
-import carousel from 'vue-owl-carousel'
+import Carousel3d from 'vue-carousel-3d'
 
-Vue.use(carousel)
+Vue.use(Carousel3d)
