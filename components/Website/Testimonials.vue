@@ -207,7 +207,7 @@ export default {
 }
 
 .carousel-3d-slide {
-  border: none;
+  border: none !important;
   width: 800px !important;
   height: 420px !important;
   background: transparent !important;
