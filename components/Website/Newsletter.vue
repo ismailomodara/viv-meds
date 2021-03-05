@@ -20,6 +20,7 @@
                 round
                 class="el-button--secondary ml-2"
                 :loading="subscribing"
+                @click="submit"
                 >Submit</el-button
               >
             </div>
@@ -31,6 +32,8 @@
 </template>
 
 <script>
+import request from '@/controller/request'
+
 export default {
   name: 'Newsletter',
   data() {
@@ -53,7 +56,35 @@ export default {
       subscribing: false,
     }
   },
-  methods: {},
+  methods: {
+    submit() {
+      this.$refs.subscribeForm.validate((valid) => {
+        if (!valid) {
+          return false
+        }
+        this.subscribing = true
+        request
+          .newsletter(this.form)
+          .then((response) => {
+            if (response.data.success) {
+              this.$message.success(
+                'You have successfully subscribed to our newsletter.'
+              )
+              this.subscribing = false
+              this.$refs.contactForm.resetFields()
+            } else {
+              this.$message.error(response.data.message)
+              this.subscribing = false
+            }
+          })
+          .catch(() => {
+            this.subscribing = false
+            this.$message.error('An error occurred, please again')
+          })
+        return true
+      })
+    },
+  },
 }
 </script>
 

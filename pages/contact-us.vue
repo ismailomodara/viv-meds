@@ -39,16 +39,111 @@
         </div>
       </div>
     </el-container>
+    <el-container class="is-flex-column">
+      <div class="vm-section_content">
+        <h4 class="text-center">How can we help you?</h4>
+        <el-form ref="contactForm" :model="form" label-position="top">
+          <el-row type="flex" :gutter="40" class="flex-wrap">
+            <el-col :span="24">
+              <el-form-item
+                label="Full Name"
+                prop="full_name"
+                :rules="validations.inputField"
+              >
+                <el-input v-model="form.full_name" type="text" />
+              </el-form-item>
+            </el-col>
+          </el-row>
+          <el-row type="flex" :gutter="40" class="flex-wrap">
+            <el-col :span="24">
+              <el-form-item
+                label="Phone Number"
+                prop="phone_number"
+                :rules="validations.inputField"
+              >
+                <el-input
+                  v-model="form.phone_number"
+                  type="text"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                />
+              </el-form-item>
+            </el-col>
+          </el-row>
+          <el-row type="flex" :gutter="40" class="flex-wrap">
+            <el-col :span="24">
+              <el-form-item
+                label="Email"
+                prop="email"
+                :rules="validations.emailField"
+              >
+                <el-input v-model="form.email" type="text" />
+              </el-form-item>
+            </el-col>
+          </el-row>
+          <el-row type="flex" :gutter="40" class="flex-wrap">
+            <el-col :span="24">
+              <el-form-item
+                label="Comments/ Concerns/Inquiry"
+                prop="enquiry"
+                :rules="validations.inputField"
+              >
+                <el-input v-model="form.enquiry" type="textarea" rows="5" />
+              </el-form-item>
+            </el-col>
+          </el-row>
+        </el-form>
+        <div class="vm-button__container">
+          <el-button
+            class="el-button--secondary"
+            round
+            :loading="submitting"
+            @click="submit"
+            >Submit</el-button
+          >
+        </div>
+      </div>
+    </el-container>
   </div>
 </template>
 
 <script>
+import validations from '@/mixin/validations'
+import request from '@/controller/request'
+
 export default {
   name: 'ContactUs',
   data() {
     return {
       title: 'Contact Us',
+      form: {
+        email: 'omodara145@gmail.com',
+        full_name: 'Ismail Omodara',
+        phone_number: '08179591037',
+        enquiry: 'Testing',
+      },
+      validations,
+      submitting: false,
     }
+  },
+  methods: {
+    submit() {
+      this.$refs.contactForm.validate((valid) => {
+        if (!valid) {
+          return false
+        }
+        this.submitting = true
+        request
+          .contact(this.form)
+          .then((response) => {
+            console.log(response)
+          })
+          .catch(() => {
+            this.submitting = false
+            this.$message.error('An error occurred, please again')
+          })
+        return true
+      })
+    },
   },
 }
 </script>

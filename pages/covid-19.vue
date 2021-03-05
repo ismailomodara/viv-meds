@@ -13,19 +13,19 @@
             <el-col :md="12">
               <el-form-item
                 label="First Name"
-                prop="firstName"
+                prop="first_name"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.firstName" type="text" />
+                <el-input v-model="form.first_name" type="text" />
               </el-form-item>
             </el-col>
             <el-col :md="12">
               <el-form-item
                 label="Last Name"
-                prop="lastName"
+                prop="last_name"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.lastName" type="text" />
+                <el-input v-model="form.last_name" type="text" />
               </el-form-item>
             </el-col>
           </el-row>
@@ -44,10 +44,10 @@
                 <el-col :md="12" :lg="12">
                   <el-form-item
                     label="Date of Birth"
-                    prop="dateOfBirth"
+                    prop="dob"
                     :rules="validations.inputField"
                   >
-                    <el-date-picker v-model="form.dateOfBirth" type="date" />
+                    <el-date-picker v-model="form.dob" type="date" />
                   </el-form-item>
                 </el-col>
                 <el-col :md="12" :lg="12">
@@ -81,10 +81,10 @@
             <el-col :span="24">
               <el-form-item
                 label="Current Medications"
-                prop="currentMedications"
+                prop="current_medication"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.currentMedications" type="text" />
+                <el-input v-model="form.current_medication" type="text" />
               </el-form-item>
             </el-col>
           </el-row>
@@ -92,19 +92,19 @@
             <el-col :md="12">
               <el-form-item
                 label="Current Pharmacy"
-                prop="currentPharmacy"
+                prop="current_pharmacy"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.currentPharmacy" type="text" />
+                <el-input v-model="form.current_pharmacy" type="text" />
               </el-form-item>
             </el-col>
             <el-col :md="12">
               <el-form-item
                 label="Name of Insurance"
-                prop="nameOfInsurance"
+                prop="insurance_name"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.nameOfInsurance" type="text" />
+                <el-input v-model="form.insurance_name" type="text" />
               </el-form-item>
             </el-col>
           </el-row>
@@ -216,15 +216,15 @@ export default {
       title: 'Covid-19',
       image: 'covid-19.jpg',
       form: {
-        firstName: '',
-        lastName: '',
+        first_name: '',
+        last_name: '',
         email: '',
-        dateOfBirth: '',
+        dob: '',
         gender: '',
         address: '',
-        currentMedications: '',
-        currentPharmacy: '',
-        nameOfInsurance: '',
+        current_pharmacy: '',
+        current_medication: '',
+        insurance_name: '',
       },
       submitting: false,
       validations,

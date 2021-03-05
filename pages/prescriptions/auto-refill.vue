@@ -13,19 +13,19 @@
             <el-col :md="12">
               <el-form-item
                 label="First Name"
-                prop="firstName"
+                prop="first_name"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.firstName" type="text" />
+                <el-input v-model="form.first_name" type="text" />
               </el-form-item>
             </el-col>
             <el-col :md="12">
               <el-form-item
                 label="Last Name"
-                prop="lastName"
+                prop="last_name"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.lastName" type="text" />
+                <el-input v-model="form.last_name" type="text" />
               </el-form-item>
             </el-col>
           </el-row>
@@ -42,32 +42,32 @@
             <el-col :md="12" :lg="12">
               <el-form-item
                 label="Date of Birth"
-                prop="dateOfBirth"
+                prop="dob"
                 :rules="validations.inputField"
               >
-                <el-date-picker v-model="form.dateOfBirth" type="date" />
+                <el-date-picker v-model="form.dob" type="date" />
               </el-form-item>
             </el-col>
           </el-row>
           <el-row type="flex">
             <el-col :span="24">
               <el-form-item
-                label="Telephone Number"
-                prop="phone"
+                label="Teletelephone_number Number"
+                prop="telephone_number"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.phone" type="text" />
+                <el-input v-model="form.telephone_number" type="text" />
               </el-form-item>
             </el-col>
           </el-row>
           <el-row type="flex">
             <el-col :span="24">
               <el-form-item
-                label="Prescription Name and Strength:"
-                prop="prescription"
+                label="Prescription Name:"
+                prop="prescription_name"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.prescription" type="text" />
+                <el-input v-model="form.prescription_name" type="text" />
               </el-form-item>
             </el-col>
           </el-row>
@@ -75,10 +75,10 @@
             <el-col :span="24">
               <el-form-item
                 label="Prescription Number:"
-                prop="prescriptionNo"
+                prop="prescription_number"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.prescriptionNo" type="text" />
+                <el-input v-model="form.prescription_number" type="text" />
               </el-form-item>
             </el-col>
           </el-row>
@@ -108,13 +108,13 @@ export default {
       image: 'auto-refill.jpg',
       imageFolder: 'prescriptions',
       form: {
-        firstName: '',
-        lastName: '',
+        first_name: '',
+        last_name: '',
         email: '',
-        dateOfBirth: '',
-        phone: '',
-        prescription: '',
-        prescriptionNo: '',
+        dob: '',
+        telephone_number: '',
+        prescription_name: '',
+        prescription_number: '',
       },
       submitting: false,
       validations,

@@ -13,19 +13,19 @@
             <el-col :md="12">
               <el-form-item
                 label="First Name"
-                prop="firstName"
+                prop="first_name"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.firstName" type="text" />
+                <el-input v-model="form.first_name" type="text" />
               </el-form-item>
             </el-col>
             <el-col :md="12">
               <el-form-item
                 label="Last Name"
-                prop="lastName"
+                prop="last_name"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.lastName" type="text" />
+                <el-input v-model="form.last_name" type="text" />
               </el-form-item>
             </el-col>
           </el-row>
@@ -44,10 +44,10 @@
                 <el-col :md="12" :lg="12">
                   <el-form-item
                     label="Date of Birth"
-                    prop="dateOfBirth"
+                    prop="dob"
                     :rules="validations.inputField"
                   >
-                    <el-date-picker v-model="form.dateOfBirth" type="date" />
+                    <el-date-picker v-model="form.dob" type="date" />
                   </el-form-item>
                 </el-col>
                 <el-col :md="12" :lg="12">
@@ -67,22 +67,13 @@
             </el-col>
           </el-row>
           <el-row type="flex" :gutter="40" class="flex-wrap">
-            <el-col :span="12">
+            <el-col :span="24">
               <el-form-item
-                label="Address 1"
-                prop="address1"
+                label="Address"
+                prop="address"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.address1" type="text" />
-              </el-form-item>
-            </el-col>
-            <el-col :span="12">
-              <el-form-item
-                label="Address 2"
-                prop="address2"
-                :rules="validations.inputField"
-              >
-                <el-input v-model="form.address2" type="text" />
+                <el-input v-model="form.address" type="text" />
               </el-form-item>
             </el-col>
           </el-row>
@@ -109,20 +100,20 @@
           <el-row type="flex" :gutter="40" class="flex-wrap">
             <el-col :md="12">
               <el-form-item
-                label="Zip Code"
-                prop="zip"
+                label="zip_code Code"
+                prop="zip_code"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.zip" type="text" />
+                <el-input v-model="form.zip_code" type="text" />
               </el-form-item>
             </el-col>
             <el-col :md="12">
               <el-form-item
-                label="Telephone Number"
-                prop="phone"
+                label="Teletelephone_number Number"
+                prop="telephone_number"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.phone" type="text" />
+                <el-input v-model="form.telephone_number" type="text" />
               </el-form-item>
             </el-col>
           </el-row>
@@ -130,41 +121,48 @@
             <el-col :md="12">
               <el-form-item
                 label="Best Way to reach you"
-                prop="communicationMedium"
+                prop="best_way_to_reach_you"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.communicationMedium" type="text" />
+                <el-input v-model="form.best_way_to_reach_you" type="text" />
               </el-form-item>
             </el-col>
             <el-col :md="12">
               <el-form-item
                 label=" Best Time to be Contacted:"
-                prop="communicationTime"
+                prop="best_time_to_be_contacted"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.communicationTime" type="text" />
+                <el-input
+                  v-model="form.best_time_to_be_contacted"
+                  type="text"
+                />
               </el-form-item>
             </el-col>
           </el-row>
           <el-row type="flex">
             <el-col :span="24">
               <el-form-item
-                label="Preferred Location:"
-                prop="location"
+                label="Preferred preferred_location:"
+                prop="preferred_location"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.location" type="text" />
+                <el-input v-model="form.preferred_location" type="text" />
               </el-form-item>
             </el-col>
           </el-row>
           <el-row type="flex">
             <el-col :span="24">
               <el-form-item
-                label="Reason for Consultation:"
-                prop="reason"
+                label="reason_for_consultation for Consultation:"
+                prop="reason_for_consultation"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.reason" type="textarea" rows="6" />
+                <el-input
+                  v-model="form.reason_for_consultation"
+                  type="textarea"
+                  rows="6"
+                />
               </el-form-item>
             </el-col>
           </el-row>
@@ -209,21 +207,20 @@ export default {
       image: 'schedule-consultation.jpg',
       imageFolder: 'prescriptions',
       form: {
-        firstName: '',
-        lastName: '',
+        first_name: '',
+        last_name: '',
         email: '',
-        dateOfBirth: '',
+        dob: '',
         gender: '',
-        address1: '',
-        address2: '',
+        address: '',
         city: '',
         state: '',
-        zip: '',
-        phone: '',
-        communicationMedium: '',
-        communicationTime: '',
-        location: '',
-        reason: '',
+        zip_code: '',
+        telephone_number: '',
+        best_way_to_reach_you: '',
+        best_time_to_be_contacted: '',
+        preferred_location: '',
+        reason_for_consultation: '',
         additionalInformation: '',
       },
       submitting: false,

@@ -13,19 +13,19 @@
             <el-col :md="12">
               <el-form-item
                 label="First Name"
-                prop="firstName"
+                prop="first_name"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.firstName" type="text" />
+                <el-input v-model="form.first_name" type="text" />
               </el-form-item>
             </el-col>
             <el-col :md="12">
               <el-form-item
                 label="Last Name"
-                prop="lastName"
+                prop="last_name"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.lastName" type="text" />
+                <el-input v-model="form.last_name" type="text" />
               </el-form-item>
             </el-col>
           </el-row>
@@ -33,21 +33,25 @@
             <el-col :span="24">
               <el-form-item
                 label="Telephone Number"
-                prop="phoneNumber"
+                prop="telephone_number"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.phoneNumber" type="text" />
+                <el-input v-model="form.telephone_number" type="text" />
               </el-form-item>
             </el-col>
           </el-row>
           <el-row type="flex">
             <el-col :span="24">
               <el-form-item
-                label="RX Description"
-                prop="description"
+                label="RX rx_description"
+                prop="rx_description"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.description" type="textarea" rows="7" />
+                <el-input
+                  v-model="form.rx_description"
+                  type="textarea"
+                  rows="7"
+                />
               </el-form-item>
             </el-col>
           </el-row>
@@ -77,10 +81,10 @@ export default {
       image: 'request-refill.jpg',
       imageFolder: 'prescriptions',
       form: {
-        firstName: '',
-        lastName: '',
-        phoneNumber: '',
-        description: '',
+        first_name: '',
+        last_name: '',
+        telephone_number: '',
+        rx_description: '',
       },
       submitting: false,
       validations,

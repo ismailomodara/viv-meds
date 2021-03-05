@@ -13,19 +13,19 @@
             <el-col :md="12">
               <el-form-item
                 label="First Name"
-                prop="firstName"
+                prop="first_name"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.firstName" type="text" />
+                <el-input v-model="form.first_name" type="text" />
               </el-form-item>
             </el-col>
             <el-col :md="12">
               <el-form-item
                 label="Last Name"
-                prop="lastName"
+                prop="last_name"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.lastName" type="text" />
+                <el-input v-model="form.last_name" type="text" />
               </el-form-item>
             </el-col>
           </el-row>
@@ -44,10 +44,10 @@
                 <el-col :md="12" :lg="12">
                   <el-form-item
                     label="Date of Birth"
-                    prop="dateOfBirth"
+                    prop="dob"
                     :rules="validations.inputField"
                   >
-                    <el-date-picker v-model="form.dateOfBirth" type="date" />
+                    <el-date-picker v-model="form.dob" type="date" />
                   </el-form-item>
                 </el-col>
                 <el-col :md="12" :lg="12">
@@ -67,22 +67,13 @@
             </el-col>
           </el-row>
           <el-row type="flex" :gutter="40" class="flex-wrap">
-            <el-col :span="12">
+            <el-col :span="24">
               <el-form-item
-                label="Address 1"
-                prop="address1"
+                label="Address"
+                prop="address"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.address1" type="text" />
-              </el-form-item>
-            </el-col>
-            <el-col :span="12">
-              <el-form-item
-                label="Address 2"
-                prop="address2"
-                :rules="validations.inputField"
-              >
-                <el-input v-model="form.address2" type="text" />
+                <el-input v-model="form.address" type="text" />
               </el-form-item>
             </el-col>
           </el-row>
@@ -110,19 +101,19 @@
             <el-col :md="12">
               <el-form-item
                 label="Zip Code"
-                prop="zip"
+                prop="zip_code"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.zip" type="text" />
+                <el-input v-model="form.zip_code" type="text" />
               </el-form-item>
             </el-col>
             <el-col :md="12">
               <el-form-item
                 label="Telephone Number"
-                prop="phone"
+                prop="telephone_number"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.phone" type="text" />
+                <el-input v-model="form.telephone_number" type="text" />
               </el-form-item>
             </el-col>
           </el-row>
@@ -130,10 +121,10 @@
             <el-col :span="24">
               <el-form-item
                 label="Best Way to reach you"
-                prop="communication"
+                prop="best_way_to_reach_you"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.communication" type="text" />
+                <el-input v-model="form.best_way_to_reach_you" type="text" />
               </el-form-item>
             </el-col>
           </el-row>
@@ -141,19 +132,19 @@
             <el-col :md="12">
               <el-form-item
                 label="Previous Pharmacy Name:"
-                prop="prevPharmacy"
+                prop="previous_pharmacy"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.prevPharmacy" type="text" />
+                <el-input v-model="form.previous_pharmacy" type="text" />
               </el-form-item>
             </el-col>
             <el-col :md="12">
               <el-form-item
                 label="Previous Pharmacy Telephone Number:"
-                prop="prevPharmacyPhone"
+                prop="previous_pharmacy_mobile"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.prevPharmacyPhone" type="text" />
+                <el-input v-model="form.previous_pharmacy_mobile" type="text" />
               </el-form-item>
             </el-col>
           </el-row>
@@ -161,10 +152,10 @@
             <el-col :span="24">
               <el-form-item
                 label="Prescription Name and Strength:"
-                prop="prescription"
+                prop="prescription_name"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.prescription" type="text" />
+                <el-input v-model="form.prescription_name" type="text" />
               </el-form-item>
             </el-col>
           </el-row>
@@ -175,7 +166,7 @@
                 prop="prescriptionNo"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.prescriptionNo" type="text" />
+                <el-input v-model="form.prescription_number" type="text" />
               </el-form-item>
             </el-col>
           </el-row>
@@ -205,22 +196,21 @@ export default {
       image: 'transfer-prescriptions.jpg',
       imageFolder: 'prescriptions',
       form: {
-        firstName: '',
-        lastName: '',
+        first_name: '',
+        last_name: '',
         email: '',
-        dateOfBirth: '',
+        dob: '',
         gender: '',
-        address1: '',
-        address2: '',
+        address: '',
         city: '',
         state: '',
-        zip: '',
-        phone: '',
-        communication: '',
-        prevPharmacy: '',
-        prevPharmacyPhone: '',
-        prescription: '',
-        prescriptionNo: '',
+        zip_code: '',
+        telephone_number: '',
+        best_way_to_reach_you: '',
+        previous_pharmacy: '',
+        previous_pharmacy_mobile: '',
+        prescription_name: '',
+        prescription_number: '',
       },
       submitting: false,
       validations,
