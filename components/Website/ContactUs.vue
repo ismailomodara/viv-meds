@@ -19,7 +19,9 @@
         </p>
       </div>
       <div class="vm-contact__action">
-        <el-button round class="el-button--secondary">Contact</el-button>
+        <el-button round class="el-button--secondary" @click="contact"
+          >Contact</el-button
+        >
       </div>
     </div>
   </el-container>
@@ -30,6 +32,11 @@ export default {
   name: 'ContactUs',
   data() {
     return {}
+  },
+  methods: {
+    contact() {
+      this.$router.push('/contact-us')
+    },
   },
 }
 </script>

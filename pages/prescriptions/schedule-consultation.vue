@@ -166,21 +166,6 @@
               </el-form-item>
             </el-col>
           </el-row>
-          <el-row type="flex">
-            <el-col :span="24">
-              <el-form-item
-                label="Additional Details:"
-                prop="additionalInformation"
-                :rules="validations.inputField"
-              >
-                <el-input
-                  v-model="form.additionalInformation"
-                  type="textarea"
-                  rows="6"
-                />
-              </el-form-item>
-            </el-col>
-          </el-row>
         </el-form>
         <div class="vm-button__container">
           <el-button
@@ -198,6 +183,7 @@
 
 <script>
 import validations from '@/mixin/validations'
+import request from '@/controller/request'
 
 export default {
   name: 'TransferPrescriptions',
@@ -221,7 +207,6 @@ export default {
         best_time_to_be_contacted: '',
         preferred_location: '',
         reason_for_consultation: '',
-        additionalInformation: '',
       },
       submitting: false,
       validations,
@@ -234,9 +219,15 @@ export default {
           return false
         }
         this.submitting = true
-        setTimeout(() => {
-          this.submitting = false
-        }, 2000)
+        request
+          .schedule_wellness_consultation(this.form)
+          .then((response) => {
+            console.log(response)
+          })
+          .catch(() => {
+            this.submitting = false
+            this.$message.error('An error occurred, please again')
+          })
         return true
       })
     },

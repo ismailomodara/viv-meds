@@ -43,7 +43,7 @@
           <el-row type="flex">
             <el-col :span="24">
               <el-form-item
-                label="RX rx_description"
+                label="Rx Description"
                 prop="rx_description"
                 :rules="validations.inputField"
               >
@@ -72,6 +72,7 @@
 
 <script>
 import validations from '@/mixin/validations'
+import request from '@/controller/request'
 
 export default {
   name: 'RequestRefill',
@@ -97,9 +98,15 @@ export default {
           return false
         }
         this.submitting = true
-        setTimeout(() => {
-          this.submitting = false
-        }, 2000)
+        request
+          .prescription_refill(this.form)
+          .then((response) => {
+            console.log(response)
+          })
+          .catch(() => {
+            this.submitting = false
+            this.$message.error('An error occurred, please again')
+          })
         return true
       })
     },

@@ -187,6 +187,7 @@
 
 <script>
 import validations from '@/mixin/validations'
+import request from '@/controller/request'
 
 export default {
   name: 'TransferPrescriptions',
@@ -223,9 +224,15 @@ export default {
           return false
         }
         this.submitting = true
-        setTimeout(() => {
-          this.submitting = false
-        }, 2000)
+        request
+          .create_patient_information(this.form)
+          .then((response) => {
+            console.log(response)
+          })
+          .catch(() => {
+            this.submitting = false
+            this.$message.error('An error occurred, please again')
+          })
         return true
       })
     },

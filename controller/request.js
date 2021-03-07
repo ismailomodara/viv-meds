@@ -1,10 +1,10 @@
-const PROXY = 'https://cors-anywhere.herokuapp.com/'
+// const PROXY = 'https://cors-anywhere.herokuapp.com/'
 
 const BASE_URL = 'http://vivmeds.000webhostapp.com/api'
-const URL = PROXY + BASE_URL
+// const URL = PROXY + BASE_URL
 
 export const _POST = (url, payload) => {
-  return fetch(`${URL}/${url}`, {
+  return fetch(`${BASE_URL}/${url}`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

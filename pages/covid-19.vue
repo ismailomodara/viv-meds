@@ -205,6 +205,7 @@
 <script>
 import validations from '@/mixin/validations'
 import Faq from '@/components/Faq'
+import request from '@/controller/request'
 
 export default {
   name: 'Covid19',
@@ -237,9 +238,15 @@ export default {
           return false
         }
         this.submitting = true
-        setTimeout(() => {
-          this.submitting = false
-        }, 2000)
+        request
+          .covid(this.form)
+          .then((response) => {
+            console.log(response)
+          })
+          .catch(() => {
+            this.submitting = false
+            this.$message.error('An error occurred, please again')
+          })
         return true
       })
     },

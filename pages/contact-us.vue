@@ -33,7 +33,7 @@
             </p>
             <p>
               <span class="label">Sunday</span>
-              <span>10AM - 2PM</span>
+              <span>Closed</span>
             </p>
           </div>
         </div>

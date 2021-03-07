@@ -55,7 +55,7 @@
             </p>
             <p>
               <span class="label">Sunday</span>
-              <span>10AM - 2PM</span>
+              <span>Closed</span>
             </p>
           </div>
         </el-col>
@@ -179,7 +179,7 @@ export default {
 
 @media (max-width: 600px) {
   .vm-footer {
-    padding: 40px 0 20px !important;
+    padding: 40px 15px 20px !important;
 
     &__logo {
       text-align: center;

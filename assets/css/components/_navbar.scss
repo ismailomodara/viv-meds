@@ -252,6 +252,10 @@
 
     &__main {
       height: 70px;
+
+      > .el-container {
+        padding: 0 15px !important;
+      }
     }
   }
 
