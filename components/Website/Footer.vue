@@ -170,7 +170,6 @@ export default {
     align-items: center;
     width: 100%;
     margin: 30px 0;
-
     p {
       font-size: 1rem;
     }

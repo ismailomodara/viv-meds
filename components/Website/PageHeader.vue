@@ -76,7 +76,7 @@ export default {
 
 @media (max-width: 600px) {
   .vm-page-header {
-    padding: 100px 0 0;
+    padding: 100px 15px 0;
     height: auto;
 
     &__image {

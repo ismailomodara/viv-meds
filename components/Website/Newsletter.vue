@@ -66,16 +66,15 @@ export default {
         request
           .newsletter(this.form)
           .then((response) => {
-            if (response.data.success) {
-              this.$message.success(
-                'You have successfully subscribed to our newsletter.'
-              )
-              this.subscribing = false
-              this.$refs.contactForm.resetFields()
-            } else {
-              this.$message.error(response.data.message)
-              this.subscribing = false
+            if (response.status === 200) {
+              this.$message({
+                type: 'success',
+                message: 'You have successfully subscribed to our newsletter.',
+                duration: 4000,
+              })
+              this.$refs.subscribeForms.resetFields()
             }
+            this.subscribing = false
           })
           .catch(() => {
             this.subscribing = false

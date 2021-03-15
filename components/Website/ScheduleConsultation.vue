@@ -72,7 +72,7 @@ export default {
 @media (max-width: 400px) {
   .vm-schedule {
     height: auto !important;
-    padding: 30px 0;
+    padding: 30px 15px;
 
     .el-container {
       flex-direction: column;

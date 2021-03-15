@@ -30,7 +30,7 @@
             </el-col>
           </el-row>
           <el-row type="flex" :gutter="40" class="flex-wrap">
-            <el-col :md="24" :lg="12">
+            <el-col :md="24" :lg="10">
               <el-form-item
                 label="Email"
                 prop="email"
@@ -39,7 +39,7 @@
                 <el-input v-model="form.email" type="text" />
               </el-form-item>
             </el-col>
-            <el-col :md="24" :lg="12">
+            <el-col :md="24" :lg="14">
               <el-row type="flex" :gutter="30" class="flex-wrap">
                 <el-col :md="12" :lg="12">
                   <el-form-item
@@ -100,7 +100,7 @@
           <el-row type="flex" :gutter="40" class="flex-wrap">
             <el-col :md="12">
               <el-form-item
-                label="zip_code Code"
+                label="Zip Code"
                 prop="zip_code"
                 :rules="validations.inputField"
               >
@@ -109,7 +109,7 @@
             </el-col>
             <el-col :md="12">
               <el-form-item
-                label="Teletelephone_number Number"
+                label="Telephone Number"
                 prop="telephone_number"
                 :rules="validations.inputField"
               >
@@ -133,17 +133,23 @@
                 prop="best_time_to_be_contacted"
                 :rules="validations.inputField"
               >
-                <el-input
+                <el-time-select
                   v-model="form.best_time_to_be_contacted"
-                  type="text"
-                />
+                  :picker-options="{
+                    start: '07:00',
+                    step: '00:30',
+                    end: '22:00',
+                  }"
+                  placeholder="Select time"
+                >
+                </el-time-select>
               </el-form-item>
             </el-col>
           </el-row>
           <el-row type="flex">
             <el-col :span="24">
               <el-form-item
-                label="Preferred preferred_location:"
+                label="Preferred Location:"
                 prop="preferred_location"
                 :rules="validations.inputField"
               >
@@ -154,7 +160,7 @@
           <el-row type="flex">
             <el-col :span="24">
               <el-form-item
-                label="reason_for_consultation for Consultation:"
+                label="Reason for Consultation:"
                 prop="reason_for_consultation"
                 :rules="validations.inputField"
               >
@@ -222,7 +228,15 @@ export default {
         request
           .schedule_wellness_consultation(this.form)
           .then((response) => {
-            console.log(response)
+            if (response.status === 200) {
+              this.$message({
+                type: 'success',
+                message: 'Your request has been recorded successfully.',
+                duration: 4000,
+              })
+              this.$refs.form.resetFields()
+            }
+            this.submitting = false
           })
           .catch(() => {
             this.submitting = false

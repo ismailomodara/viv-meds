@@ -116,10 +116,10 @@ export default {
     return {
       title: 'Contact Us',
       form: {
-        email: 'omodara145@gmail.com',
-        full_name: 'Ismail Omodara',
-        phone_number: '08179591037',
-        enquiry: 'Testing',
+        email: '',
+        full_name: '',
+        phone_number: '',
+        enquiry: '',
       },
       validations,
       submitting: false,
@@ -135,7 +135,15 @@ export default {
         request
           .contact(this.form)
           .then((response) => {
-            console.log(response)
+            if (response.status === 200) {
+              this.$message({
+                type: 'success',
+                message: 'Your message has been recorded successfully.',
+                duration: 4000,
+              })
+              this.$refs.contactForm.resetFields()
+            }
+            this.submitting = false
           })
           .catch(() => {
             this.submitting = false

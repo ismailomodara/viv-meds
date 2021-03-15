@@ -7,7 +7,7 @@
         <p>Immunizations will be available at no costs to patients.</p>
       </div>
       <div class="vm-section_content">
-        <h5>Signup for COVID-19 Vaccine Information</h5>
+        <h5 class="mb-2">Signup for COVID-19 Vaccine Information</h5>
         <el-form ref="form" :model="form" label-position="top">
           <el-row type="flex" :gutter="40" class="flex-wrap">
             <el-col :md="12">
@@ -241,7 +241,15 @@ export default {
         request
           .covid(this.form)
           .then((response) => {
-            console.log(response)
+            if (response.status === 200) {
+              this.$message({
+                type: 'success',
+                message: 'Your request has been recorded successfully.',
+                duration: 4000,
+              })
+              this.$refs.form.resetFields()
+            }
+            this.submitting = false
           })
           .catch(() => {
             this.submitting = false

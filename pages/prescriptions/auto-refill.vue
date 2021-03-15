@@ -131,7 +131,15 @@ export default {
         request
           .automatic_refill_request(this.form)
           .then((response) => {
-            console.log(response)
+            if (response.status === 200) {
+              this.$message({
+                type: 'success',
+                message: 'Your request has been recorded successfully.',
+                duration: 4000,
+              })
+              this.$refs.form.resetFields()
+            }
+            this.submitting = false
           })
           .catch(() => {
             this.submitting = false

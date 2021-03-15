@@ -30,7 +30,7 @@
             </el-col>
           </el-row>
           <el-row type="flex" :gutter="40" class="flex-wrap">
-            <el-col :md="24" :lg="12">
+            <el-col :md="24" :lg="10">
               <el-form-item
                 label="Email"
                 prop="email"
@@ -39,7 +39,7 @@
                 <el-input v-model="form.email" type="text" />
               </el-form-item>
             </el-col>
-            <el-col :md="24" :lg="12">
+            <el-col :md="24" :lg="14">
               <el-row type="flex" :gutter="30" class="flex-wrap">
                 <el-col :md="12" :lg="12">
                   <el-form-item
@@ -163,7 +163,7 @@
             <el-col :span="24">
               <el-form-item
                 label="Prescription Number:"
-                prop="prescriptionNo"
+                prop="prescription_number"
                 :rules="validations.inputField"
               >
                 <el-input v-model="form.prescription_number" type="text" />
@@ -227,7 +227,15 @@ export default {
         request
           .create_patient_information(this.form)
           .then((response) => {
-            console.log(response)
+            if (response.status === 200) {
+              this.$message({
+                type: 'success',
+                message: 'Your request has been recorded successfully.',
+                duration: 4000,
+              })
+              this.$refs.form.resetFields()
+            }
+            this.submitting = false
           })
           .catch(() => {
             this.submitting = false

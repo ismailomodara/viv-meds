@@ -1,7 +1,4 @@
-// const PROXY = 'https://cors-anywhere.herokuapp.com/'
-
-const BASE_URL = 'http://vivmeds.000webhostapp.com/api'
-// const URL = PROXY + BASE_URL
+const BASE_URL = 'https://test.foodxyme.com/api'
 
 export const _POST = (url, payload) => {
   return fetch(`${BASE_URL}/${url}`, {
