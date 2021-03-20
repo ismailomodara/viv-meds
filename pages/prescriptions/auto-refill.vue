@@ -30,7 +30,7 @@
             </el-col>
           </el-row>
           <el-row type="flex" :gutter="40" class="flex-wrap">
-            <el-col :md="24" :lg="12">
+            <el-col :md="12" :lg="12">
               <el-form-item
                 label="Email"
                 prop="email"
@@ -52,11 +52,15 @@
           <el-row type="flex">
             <el-col :span="24">
               <el-form-item
-                label="Teletelephone_number Number"
+                label="Telephone Number"
                 prop="telephone_number"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.telephone_number" type="text" />
+                <el-input
+                  v-model="form.telephone_number"
+                  type="text"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                />
               </el-form-item>
             </el-col>
           </el-row>
@@ -68,17 +72,6 @@
                 :rules="validations.inputField"
               >
                 <el-input v-model="form.prescription_name" type="text" />
-              </el-form-item>
-            </el-col>
-          </el-row>
-          <el-row type="flex">
-            <el-col :span="24">
-              <el-form-item
-                label="Prescription Number:"
-                prop="prescription_number"
-                :rules="validations.inputField"
-              >
-                <el-input v-model="form.prescription_number" type="text" />
               </el-form-item>
             </el-col>
           </el-row>
@@ -115,7 +108,6 @@ export default {
         dob: '',
         telephone_number: '',
         prescription_name: '',
-        prescription_number: '',
       },
       submitting: false,
       validations,

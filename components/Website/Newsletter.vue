@@ -9,7 +9,7 @@
         </p>
       </div>
       <div class="vm-newsletter__form">
-        <el-form ref="subscribeForm" :model="form" label-position="top">
+        <el-form ref="form" :model="form" label-position="top">
           <el-form-item label="Email" prop="email" :rules="rules">
             <div class="is-flex">
               <el-input
@@ -58,7 +58,7 @@ export default {
   },
   methods: {
     submit() {
-      this.$refs.subscribeForm.validate((valid) => {
+      this.$refs.form.validate((valid) => {
         if (!valid) {
           return false
         }
@@ -72,13 +72,13 @@ export default {
                 message: 'You have successfully subscribed to our newsletter.',
                 duration: 4000,
               })
-              this.$refs.subscribeForms.resetFields()
+              this.$refs.form.resetFields()
+              this.subscribing = false
             }
-            this.subscribing = false
           })
           .catch(() => {
             this.subscribing = false
-            this.$message.error('An error occurred, please again')
+            this.$message.error('An error occurred, try a different email')
           })
         return true
       })

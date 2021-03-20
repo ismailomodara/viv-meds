@@ -144,7 +144,11 @@
                 prop="previous_pharmacy_mobile"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.previous_pharmacy_mobile" type="text" />
+                <el-input
+                  v-model="form.previous_pharmacy_mobile"
+                  type="text"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                />
               </el-form-item>
             </el-col>
           </el-row>
@@ -156,17 +160,6 @@
                 :rules="validations.inputField"
               >
                 <el-input v-model="form.prescription_name" type="text" />
-              </el-form-item>
-            </el-col>
-          </el-row>
-          <el-row type="flex">
-            <el-col :span="24">
-              <el-form-item
-                label="Prescription Number:"
-                prop="prescription_number"
-                :rules="validations.inputField"
-              >
-                <el-input v-model="form.prescription_number" type="text" />
               </el-form-item>
             </el-col>
           </el-row>
@@ -200,18 +193,17 @@ export default {
         first_name: '',
         last_name: '',
         email: '',
+        address: '',
+        telephone_number: '',
         dob: '',
         gender: '',
-        address: '',
         city: '',
         state: '',
         zip_code: '',
-        telephone_number: '',
         best_way_to_reach_you: '',
         previous_pharmacy: '',
         previous_pharmacy_mobile: '',
         prescription_name: '',
-        prescription_number: '',
       },
       submitting: false,
       validations,

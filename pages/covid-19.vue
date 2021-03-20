@@ -30,7 +30,7 @@
             </el-col>
           </el-row>
           <el-row type="flex" :gutter="40" class="flex-wrap">
-            <el-col :md="24" :lg="10">
+            <el-col :md="14" :lg="10">
               <el-form-item
                 label="Email"
                 prop="email"
@@ -39,31 +39,38 @@
                 <el-input v-model="form.email" type="text" />
               </el-form-item>
             </el-col>
-            <el-col :md="24" :lg="14">
-              <el-row type="flex" :gutter="30" class="flex-wrap">
-                <el-col :md="12" :lg="12">
-                  <el-form-item
-                    label="Date of Birth"
-                    prop="dob"
-                    :rules="validations.inputField"
-                  >
-                    <el-date-picker v-model="form.dob" type="date" />
-                  </el-form-item>
-                </el-col>
-                <el-col :md="12" :lg="12">
-                  <el-form-item
-                    label="Gender"
-                    prop="gender"
-                    :rules="validations.inputField"
-                  >
-                    <el-radio-group v-model="form.gender">
-                      <el-radio-button label="male">Male</el-radio-button>
-                      <el-radio-button label="female">Female</el-radio-button>
-                      <el-radio-button label="others">Others</el-radio-button>
-                    </el-radio-group>
-                  </el-form-item>
-                </el-col>
-              </el-row>
+            <el-col :md="10" :lg="10">
+              <el-form-item
+                label="Telephone Number"
+                prop="mobile"
+                :rules="validations.inputField"
+              >
+                <el-input v-model="form.mobile" type="text" />
+              </el-form-item>
+            </el-col>
+          </el-row>
+          <el-row type="flex" :gutter="40" class="flex-wrap">
+            <el-col :md="12" :lg="12">
+              <el-form-item
+                label="Date of Birth"
+                prop="dob"
+                :rules="validations.inputField"
+              >
+                <el-date-picker v-model="form.dob" type="date" />
+              </el-form-item>
+            </el-col>
+            <el-col :md="12" :lg="12">
+              <el-form-item
+                label="Gender"
+                prop="gender"
+                :rules="validations.inputField"
+              >
+                <el-radio-group v-model="form.gender">
+                  <el-radio-button label="male">Male</el-radio-button>
+                  <el-radio-button label="female">Female</el-radio-button>
+                  <el-radio-button label="others">Others</el-radio-button>
+                </el-radio-group>
+              </el-form-item>
             </el-col>
           </el-row>
           <el-row type="flex" :gutter="40" class="flex-wrap">
@@ -220,6 +227,7 @@ export default {
         first_name: '',
         last_name: '',
         email: '',
+        mobile: '',
         dob: '',
         gender: '',
         address: '',

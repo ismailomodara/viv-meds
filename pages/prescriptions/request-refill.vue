@@ -9,7 +9,7 @@
       </div>
       <div class="vm-section_content">
         <el-form ref="form" :model="form" label-position="top">
-          <el-row type="flex" :gutter="60" class="flex-wrap">
+          <el-row type="flex" :gutter="40" class="flex-wrap">
             <el-col :md="12">
               <el-form-item
                 label="First Name"
@@ -29,8 +29,17 @@
               </el-form-item>
             </el-col>
           </el-row>
-          <el-row type="flex">
-            <el-col :span="24">
+          <el-row type="flex" :gutter="40" class="flex-wrap">
+            <el-col :md="14" :lg="14">
+              <el-form-item
+                label="Email"
+                prop="email"
+                :rules="validations.inputField"
+              >
+                <el-input v-model="form.email" type="text" />
+              </el-form-item>
+            </el-col>
+            <el-col :md="10" :lg="10">
               <el-form-item
                 label="Telephone Number"
                 prop="telephone_number"
@@ -84,6 +93,7 @@ export default {
       form: {
         first_name: '',
         last_name: '',
+        email: '',
         telephone_number: '',
         rx_description: '',
       },

@@ -46,6 +46,38 @@ export default {
       testimonials: [
         {
           image: 'pharmacy.jpg',
+          customer: 'RM Kulkarni',
+          rating: 5,
+          time: 'a day ago',
+          message:
+            'We used VivMed for Covid vaccinations. Their service is very professional, systematic and caring. The staff is very friendly, caring and respected our time. The premises are spic and span. We recommend VivMeds to every one for all their pharmaceutical needs',
+        },
+        {
+          image: 'pharmacy.jpg',
+          customer: 'Aditya A. Joshi',
+          rating: 5,
+          time: '2 days ago',
+          message:
+            'Got the Moderna vaccine today! Excellent and safe service. Did all the paperwork in our car - the owner went around to all the cars in the parking lot handling out paperwork and keeping us updated on status an timing. Very caring folks.',
+        },
+        {
+          image: 'pharmacy.jpg',
+          customer: 'LaHoussine Yassini',
+          rating: 5,
+          time: '3 days ago',
+          message:
+            'Great experience, and outstanding customer service. Keep up the good work.',
+        },
+        {
+          image: 'pharmacy.jpg',
+          customer: 'Mart Moore',
+          rating: 5,
+          time: '2 days ago',
+          message:
+            'Outstanding customer service and the staff there are very knowledgeable and welcoming! They truly care about their customers and their health and well-being. They weill even do all of the work for you to have your prescriptions transferred. An added bonus, they deliver within a certain radius. If you are looking for a top notch pharmacy, look no further, VivMed Pharmacy is the complete package.',
+        },
+        {
+          image: 'pharmacy.jpg',
           customer: 'Patrica Arps',
           rating: 5,
           time: '5 months ago',

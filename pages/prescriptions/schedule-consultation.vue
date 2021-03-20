@@ -113,7 +113,11 @@
                 prop="telephone_number"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.telephone_number" type="text" />
+                <el-input
+                  v-model="form.telephone_number"
+                  type="text"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                />
               </el-form-item>
             </el-col>
           </el-row>
@@ -143,17 +147,6 @@
                   placeholder="Select time"
                 >
                 </el-time-select>
-              </el-form-item>
-            </el-col>
-          </el-row>
-          <el-row type="flex">
-            <el-col :span="24">
-              <el-form-item
-                label="Preferred Location:"
-                prop="preferred_location"
-                :rules="validations.inputField"
-              >
-                <el-input v-model="form.preferred_location" type="text" />
               </el-form-item>
             </el-col>
           </el-row>
@@ -211,7 +204,6 @@ export default {
         telephone_number: '',
         best_way_to_reach_you: '',
         best_time_to_be_contacted: '',
-        preferred_location: '',
         reason_for_consultation: '',
       },
       submitting: false,
