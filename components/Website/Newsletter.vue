@@ -141,7 +141,7 @@ export default {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .vm-newsletter {
     height: auto !important;
     padding: 30px 0;

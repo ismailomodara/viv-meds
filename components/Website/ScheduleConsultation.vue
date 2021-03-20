@@ -69,7 +69,7 @@ export default {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .vm-schedule {
     height: auto !important;
     padding: 30px 15px;

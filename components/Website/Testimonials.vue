@@ -275,7 +275,7 @@ export default {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .carousel-3d-container {
     height: 470px !important;
   }

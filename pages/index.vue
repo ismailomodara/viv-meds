@@ -144,7 +144,7 @@ export default {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .vm-home-action {
     margin-bottom: 20px;
   }

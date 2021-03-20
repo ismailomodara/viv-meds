@@ -1,7 +1,7 @@
 <template>
   <div class="vm-footer">
     <el-container>
-      <el-row type="flex" class="flex-wrap" :gutter="40">
+      <el-row type="flex" class="flex-wrap">
         <el-col :md="5" :lg="5">
           <div class="vm-footer__logo">
             <img :src="getImage('vivmeds-logo.svg')" alt="VivMeds" />
@@ -41,7 +41,7 @@
           </div>
         </el-col>
       </el-row>
-      <el-row type="flex" class="flex-wrap" :gutter="40">
+      <el-row type="flex" class="flex-wrap">
         <el-col :md="7" :lg="5">
           <div class="vm-footer__section">
             <h5>Pharmacy Hours</h5>
@@ -95,7 +95,7 @@
         </el-col>
       </el-row>
       <el-row type="flex">
-        <el-col :span="24">
+        <el-col :lg="24">
           <div class="vm-footer__copyright">
             <p>Copyright {{ new Date().getFullYear() }} Vivmeds Pharmacy</p>
           </div>
@@ -178,7 +178,7 @@ export default {
 
 @media (max-width: 600px) {
   .vm-footer {
-    padding: 40px 15px 20px !important;
+    padding: 40px 10px 20px !important;
 
     &__logo {
       text-align: center;
