@@ -131,21 +131,20 @@
           <el-row type="flex" :gutter="40" class="flex-wrap">
             <el-col :md="12">
               <el-form-item
-                label="Previous Pharmacy Name:"
-                prop="previous_pharmacy"
+                label="Current Pharmacy Name:"
+                prop="current_pharmacy"
                 :rules="validations.inputField"
               >
-                <el-input v-model="form.previous_pharmacy" type="text" />
+                <el-input v-model="form.current_pharmacy" type="text" />
               </el-form-item>
             </el-col>
             <el-col :md="12">
               <el-form-item
-                label="Previous Pharmacy Telephone Number:"
-                prop="previous_pharmacy_mobile"
-                :rules="validations.inputField"
+                label="Current Pharmacy Telephone Number:"
+                prop="current_pharmacy_mobile"
               >
                 <el-input
-                  v-model="form.previous_pharmacy_mobile"
+                  v-model="form.current_pharmacy_mobile"
                   type="text"
                   oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                 />
@@ -186,7 +185,7 @@ export default {
   name: 'TransferPrescriptions',
   data() {
     return {
-      title: "Patient's Information",
+      title: 'Prescription Transfer Request form',
       image: 'transfer-prescriptions.jpg',
       imageFolder: 'prescriptions',
       form: {
@@ -201,8 +200,8 @@ export default {
         state: '',
         zip_code: '',
         best_way_to_reach_you: '',
-        previous_pharmacy: '',
-        previous_pharmacy_mobile: '',
+        current_pharmacy: '',
+        current_pharmacy_mobile: '',
         prescription_name: '',
       },
       submitting: false,
