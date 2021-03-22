@@ -13,6 +13,7 @@
 
 <script>
 import BlogCard from '@/components/Blog/BlogCard'
+import request from '@/controller/request'
 
 export default {
   name: 'Blog',
@@ -44,6 +45,23 @@ export default {
         },
       ],
     }
+  },
+  created() {
+    this.getArticles()
+  },
+  methods: {
+    getArticles() {
+      request
+        .blog()
+        .then((response) => {
+          if (response.status === 200) {
+            console.log(response)
+          }
+        })
+        .catch(() => {
+          this.$message.error('An error occurred, please again')
+        })
+    },
   },
 }
 </script>

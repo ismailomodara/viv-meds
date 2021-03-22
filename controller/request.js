@@ -10,6 +10,15 @@ export const _POST = (url, payload) => {
   })
 }
 
+export const _GET = (url) => {
+  return fetch(`${BASE_URL}/${url}`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+}
+
 export default {
   newsletter(payload) {
     return _POST('news-letter', payload)
@@ -37,5 +46,9 @@ export default {
 
   contact(payload) {
     return _POST('contact-us', payload)
+  },
+
+  blog() {
+    return _GET('blogs')
   },
 }

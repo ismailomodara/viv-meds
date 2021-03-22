@@ -54,6 +54,24 @@ export default {
         },
         {
           image: 'pharmacy.jpg',
+          customer: 'Linda Hanley',
+          rating: 5,
+          time: 'a day ago',
+          message:
+            'Love my pharmacy!! Nicest and most helpful people ever! And have given me the BEST prices ever on my drugs!!\n' +
+            'Customer service is over the top with these sweet owners! They will go above and beyond to make sure you are taken care of. They braved through the winter storm and delivered my drugs to my doorstep at my home in Ponder in order to make sure I had my blood pressure medication. That meant the world to me!!\n' +
+            'Thank you VivMed Pharmacy for taking such good care of me, your personal touch, and for loving me so much! You are truly appreciated!!',
+        },
+        {
+          image: 'pharmacy.jpg',
+          customer: 'Yesi Hernandez',
+          rating: 5,
+          time: 'a day ago',
+          message:
+            'I have the privilege of working at this outstanding establishment. The owners have made me feel at home while staying professional and welcoming. I’ve worked at major chains where the pharmacists don’t have personal ties to the customers but at Vivmeds the owners know every customer by their first name! I’m continually amazed at how much love and passion they put into their work each and every day. I’ve worked at many pharmacies and I think Vivmeds Pharmacy takes the trophy for the best one ever!',
+        },
+        {
+          image: 'pharmacy.jpg',
           customer: 'Aditya A. Joshi',
           rating: 5,
           time: '2 days ago',
@@ -70,7 +88,7 @@ export default {
         },
         {
           image: 'pharmacy.jpg',
-          customer: 'Mart Moore',
+          customer: 'Matt Moore',
           rating: 5,
           time: '2 days ago',
           message:

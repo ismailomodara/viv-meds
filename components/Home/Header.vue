@@ -29,9 +29,8 @@
           </div>
           <div v-if="activeImage === 1" class="vm-hero__container-intro">
             <h1>
-              Welcome <br />
-              To Vivmeds <br />
-              Pharmacy
+              Welcome To <br />
+              Vivmeds Pharmacy
             </h1>
             <p>We are passionate about your wellness.</p>
             <div class="socials">
@@ -80,6 +79,30 @@
                 </svg>
               </a>
             </div>
+          </div>
+          <div
+            v-if="activeImage === 8"
+            class="vm-hero__container-free-delivery"
+          >
+            <h1>Free Delivery</h1>
+            <h4>Need your Prescriptions Delivered?</h4>
+            <p>
+              We understand you cannot make it to the Pharmacy to pick up your
+              prescriptions. So, let us come to you!
+            </p>
+
+            <p>
+              Vivmeds Pharmacy offers free Home or Office Delivery to our
+              surrounding areas. Ask us about free delivery service to most of
+              Denton county, Dallas, Fort Worth and other major Texas
+              Metropolitan areas.
+            </p>
+
+            <p>
+              Contact us to have your prescriptions <br />
+              delivered at
+              <span>940-226-4849.</span>
+            </p>
           </div>
         </div>
       </template>
@@ -158,6 +181,11 @@ export default {
           description:
             'We provide the best Animal care services for your pets at an affordable cost.',
           image: 'animal-care',
+        },
+        {
+          title: '',
+          description: '',
+          image: 'free-delivery',
         },
       ],
     }

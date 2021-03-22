@@ -113,7 +113,7 @@ export default {
   },
   data() {
     return {
-      title: 'Compounding Services for Podiatry Concerns',
+      title: 'Podiatry',
       image: 'compounding-medications-for-podiatry-concerns.jpg',
       imageFolder: 'compounding',
     }

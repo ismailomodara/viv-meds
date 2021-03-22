@@ -39,7 +39,7 @@ export default {
   compoundingServices: [
     {
       image: 'compounding-medications-for-podiatry-concerns.jpg',
-      title: 'Compounding Medications for Podiatry Concerns',
+      title: 'Podiatry',
       link: 'podiatry',
     },
     {
