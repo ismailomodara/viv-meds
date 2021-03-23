@@ -1,11 +1,12 @@
 <template>
   <div class="vm-blog-card">
     <div class="vm-blog-card__image">
-      <img :src="image" alt="" />
+      <img :src="getImage(`https://${image}`)" alt="" />
     </div>
     <div class="vm-blog-card__content">
       <h3>{{ title }}</h3>
-      <nuxt-link :to="`/${link}`">
+      <p>{{ description }}</p>
+      <nuxt-link :to="`/blog/${id}`">
         <el-button type="primary">Read more</el-button>
       </nuxt-link>
     </div>
@@ -27,8 +28,12 @@ export default {
       type: String,
       required: true,
     },
-    link: {
+    description: {
       type: String,
+      required: true,
+    },
+    id: {
+      type: Number,
       required: true,
     },
   },
@@ -62,16 +67,18 @@ export default {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    height: 140px;
 
     h3 {
       color: #292222;
+      margin-bottom: 15px;
     }
 
     p {
       display: flex;
       align-items: center;
-      color: #6a8b2c;
+      color: #292222;
+      margin-bottom: 15px;
+      font-size: 1.1rem;
       cursor: pointer;
 
       span {
