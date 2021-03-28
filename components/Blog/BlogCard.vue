@@ -5,7 +5,6 @@
     </div>
     <div class="vm-blog-card__content">
       <h3>{{ title }}</h3>
-      <p>{{ description }}</p>
       <nuxt-link :to="`/blog/${id}`">
         <el-button type="primary">Read more</el-button>
       </nuxt-link>
