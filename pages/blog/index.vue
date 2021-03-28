@@ -1,14 +1,15 @@
 <template>
-  <div>
+  <div v-loading="loading">
     <PageHeader :title="title" :image="image" />
     <el-container class="vm-section">
       <el-row type="flex" :gutter="30" class="flex-wrap">
         <el-col v-for="(article, i) in blog" :key="i" :sm="12" :md="12" :lg="8">
           <BlogCard
+            :id="article.id"
+            :image-url="imageUrl"
             :image="article.image"
             :title="article.title"
             :description="article.description"
-            :id="article.id"
           />
         </el-col>
       </el-row>
@@ -27,8 +28,10 @@ export default {
   },
   data() {
     return {
+      loading: false,
       title: 'Blog',
       image: 'blog.jpg',
+      imageUrl: '',
       blog: [],
     }
   },
@@ -37,14 +40,18 @@ export default {
   },
   methods: {
     getArticles() {
+      this.loading = true
       request
         .blog()
         .then((response) => response.json())
         .then((data) => {
           this.blog = data.data
+          this.imageUrl = data.image_url
+          this.loading = false
         })
         .catch(() => {
           this.$message.error('An error occurred, please again')
+          this.loading = false
         })
     },
   },

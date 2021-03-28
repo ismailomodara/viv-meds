@@ -56,4 +56,7 @@ export default {
   build: {
     transpile: [/^element-ui/],
   },
+  generate: {
+    fallback: true,
+  },
 }

@@ -1,7 +1,7 @@
 <template>
   <div class="vm-blog-card">
     <div class="vm-blog-card__image">
-      <img :src="getImage(`https://${image}`)" alt="" />
+      <img :src="`${imageUrl}/${image}`" alt="" />
     </div>
     <div class="vm-blog-card__content">
       <h3>{{ title }}</h3>
@@ -21,6 +21,10 @@ export default {
   mixins: [image],
   props: {
     image: {
+      type: String,
+      required: true,
+    },
+    imageUrl: {
       type: String,
       required: true,
     },

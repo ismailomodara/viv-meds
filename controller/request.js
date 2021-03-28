@@ -1,4 +1,4 @@
-const BASE_URL = 'https://test.foodxyme.com/api'
+const BASE_URL = 'http://admin.vivmeds.com/api'
 
 export const _POST = (url, payload) => {
   return fetch(`${BASE_URL}/${url}`, {
@@ -50,5 +50,9 @@ export default {
 
   blog() {
     return _GET('blogs')
+  },
+
+  blogInfo(id) {
+    return _GET(`blogs/${id}`)
   },
 }
