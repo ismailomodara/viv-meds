@@ -1,4 +1,4 @@
-const BASE_URL = 'http://admin.vivmeds.com/api'
+const BASE_URL = 'https://admin.vivmeds.com/api'
 
 export const _POST = (url, payload) => {
   return fetch(`${BASE_URL}/${url}`, {
