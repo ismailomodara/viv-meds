@@ -30,7 +30,7 @@
             </el-col>
           </el-row>
           <el-row type="flex" :gutter="40" class="flex-wrap">
-            <el-col :md="14" :lg="10">
+            <el-col :md="14" :lg="12">
               <el-form-item
                 label="Email"
                 prop="email"
@@ -39,7 +39,7 @@
                 <el-input v-model="form.email" type="text" />
               </el-form-item>
             </el-col>
-            <el-col :md="10" :lg="10">
+            <el-col :md="10" :lg="12">
               <el-form-item
                 label="Telephone Number"
                 prop="mobile"
