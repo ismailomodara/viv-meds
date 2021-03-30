@@ -3,7 +3,7 @@
     <PageHeader :title="data.title" :image="blogImage" />
     <el-container class="vm-section pb-0">
       <div class="vm-section_content">
-        <p>{{ data.description }}</p>
+        <p>{{ data.content }}</p>
       </div>
     </el-container>
   </div>
