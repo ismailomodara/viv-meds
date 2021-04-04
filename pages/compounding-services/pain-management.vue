@@ -36,7 +36,7 @@
           These customized protocols may involve use of a variety of medications
           with pain-relieving properties, such as anti-depressants,
           anti-convulsants, anti-arrhythmics, anesthetics, anti-virals and NMDA
-          (N-methyl-D-aspartate) antagonists. By applying just, the right
+          (N-methyl-D-aspartate) antagonists. By applying just the right
           combination of these medications to alter the feelings of pain,
           doctors have seen good results with smaller concentrations.
         </p>

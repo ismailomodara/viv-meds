@@ -293,9 +293,9 @@ export default {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
   .carousel-3d-container {
-    height: 470px !important;
+    height: 620px !important;
   }
 
   .carousel-3d-slide {

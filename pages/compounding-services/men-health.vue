@@ -63,15 +63,21 @@
           through the use of compounded medications.
         </p>
 
-        <p>
-          We save you time by being a resource to address questions regarding
-          hormone replacement.<br />
-          Discuss and recommend specific courses of therapy to your physician,
-          based on your individual needs.<br />
-          Address questions regarding side effects and ongoing therapy.<br />
-          Assist your physician with therapy by adjusting on an ongoing basis to
-          assure optimal results.
-        </p>
+        <ul>
+          <li>
+            We save you time by being a resource to address questions regarding
+            hormone replacement.
+          </li>
+          <li>
+            Discuss and recommend specific courses of therapy to your physician,
+            based on your individual needs.
+          </li>
+          <li>Address questions regarding side effects and ongoing therapy.</li>
+          <li>
+            Assist your physician with therapy by adjusting on an ongoing basis
+            to assure optimal results.
+          </li>
+        </ul>
       </div>
 
       <div class="vm-section_content">

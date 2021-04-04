@@ -37,21 +37,21 @@
           <li>Corns and calluses</li>
           <li>Warts</li>
           <li>Poor circulation</li>
+          <li>
+            Medications like topical over the counter creams and ointments, or
+            systemic prescription medications for these conditions often come
+            with other disadvantages and challenges.
+          </li>
+          <li>
+            Oral, systemic medications come with dangerous side effects with
+            long-term use, for instance, the risk of dependence and organ
+            toxicity.
+          </li>
+          <li>
+            Topical over the counter treatments are mass produced, thus they
+            might not necessarily help your unique needs effectively.
+          </li>
         </ul>
-
-        <p>
-          Medications like topical over the counter creams and ointments, or
-          systemic prescription medications for these conditions often come with
-          other disadvantages and challenges.
-        </p>
-
-        <p>
-          Oral, systemic medications come with dangerous side effects with
-          long-term use, for instance, the risk of dependence and organ
-          toxicity.<br />
-          Topical over the counter treatments are mass produced, thus they might
-          not necessarily help your unique needs effectively.
-        </p>
       </div>
 
       <div class="vm-section_content">
