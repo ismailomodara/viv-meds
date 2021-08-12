@@ -2,8 +2,8 @@
   <div v-loading="loading">
     <PageHeader :title="data.title" :image="blogImage" />
     <el-container class="vm-section pb-0">
-      <div class="vm-section_content">
-        <p>{{ data.content }}</p>
+      <div class="vm-section_content blog">
+        <div v-html="data.content"></div>
       </div>
     </el-container>
   </div>
@@ -48,5 +48,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss" scoped></style>

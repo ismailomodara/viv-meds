@@ -5,7 +5,7 @@
     </div>
     <div class="vm-blog-card__content">
       <h3>{{ title }}</h3>
-      <p>{{ description }}</p>
+      <div class="content" v-html="description"></div>
       <nuxt-link :to="`/blog/${id}`">
         <el-button type="primary">Read more</el-button>
       </nuxt-link>
@@ -77,18 +77,27 @@ export default {
       margin-bottom: 15px;
     }
 
+    .content h3,
     p {
+      font-family: 'Oxygen', sans-serif !important;
       display: flex;
       align-items: center;
-      color: #292222;
+      color: #292222 !important;
       margin-bottom: 15px;
-      font-size: 1.1rem;
+      font-size: 1.1rem !important;
       cursor: pointer;
+      line-height: 1.6 !important;
 
       span {
         margin-right: 24px;
         font-size: 1rem;
       }
+    }
+
+    .content em {
+      font-style: normal !important;
+      color: #292222 !important;
+      font-weight: 400 !important;
     }
   }
 }
