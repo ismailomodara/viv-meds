@@ -114,7 +114,7 @@ export default {
   }
 
   .vm-blog-card__content {
-    height: 120px;
+    height: auto;
   }
 }
 </style>
