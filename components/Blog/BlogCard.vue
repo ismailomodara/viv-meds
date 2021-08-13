@@ -94,6 +94,10 @@ export default {
       }
     }
 
+    p {
+      display: block !important;
+    }
+
     .content em {
       font-style: normal !important;
       color: #292222 !important;
