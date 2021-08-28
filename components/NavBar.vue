@@ -146,7 +146,7 @@ export default {
         },
         {
           label: 'Our Services',
-          url: '/our-services',
+          url: '/products',
         },
         {
           label: 'Blog',

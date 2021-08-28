@@ -150,6 +150,7 @@
 <script>
 import PageHeader from '@/components/Website/PageHeader'
 import ScheduleConsultation from '@/components/Website/ScheduleConsultation'
+import getSiteMeta from '@/utils/getSiteMeta'
 
 export default {
   name: 'MedicationTherapyManagement',
@@ -163,6 +164,36 @@ export default {
       image: 'medication-therapy.jpg',
       imageFolder: 'services',
     }
+  },
+  head() {
+    return {
+      title: 'Medication Therapy Management',
+      meta: [...this.meta],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `https://vivmeds.com/product/medication`,
+        },
+      ],
+    }
+  },
+  computed: {
+    meta() {
+      const metaData = [
+        {
+          title: 'Medication Therapy Management',
+          description: '',
+          url: `https://vivmeds.com/product/medication`,
+        },
+        {
+          name: 'keywords',
+          content:
+            'medication therapy management, medication therapy management in pharmacy, denton, auto prescription refill',
+        },
+      ]
+      return getSiteMeta(metaData)
+    },
   },
 }
 </script>

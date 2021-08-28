@@ -80,6 +80,7 @@ import HumanPapilloma from '@/components/Immunizations/HumanPapilloma'
 import Pneumococcal from '@/components/Immunizations/Pneumococcal'
 import Measles from '@/components/Immunizations/Measles'
 import Hingles from '@/components/Immunizations/Hingles'
+import getSiteMeta from '@/utils/getSiteMeta'
 
 export default {
   name: 'Immunizations',
@@ -136,6 +137,36 @@ export default {
         },
       ],
     }
+  },
+  head() {
+    return {
+      title: 'Immunizations and Travel Vaccination',
+      meta: [...this.meta],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `https://vivmeds.com/product/vaccination`,
+        },
+      ],
+    }
+  },
+  computed: {
+    meta() {
+      const metaData = [
+        {
+          title: 'Immunizations and Travel Vaccination',
+          description: '',
+          url: `https://vivmeds.com/product/vaccination`,
+        },
+        {
+          name: 'keywords',
+          content:
+            'vaccination, travel vaccination in Denton, immunization, yellow fever vaccine',
+        },
+      ]
+      return getSiteMeta(metaData)
+    },
   },
 }
 </script>

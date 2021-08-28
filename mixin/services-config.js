@@ -3,12 +3,12 @@ export default {
     {
       image: 'compounding.jpg',
       title: 'Compounding Services',
-      link: 'compounding-services',
+      link: 'product/compounding-services',
     },
     {
       image: 'point-of-care.jpg',
       title: 'Point-of-Care Testing Services',
-      link: 'point-of-care',
+      link: 'product/point-of-care',
     },
     {
       image: 'diabetes.jpg',
@@ -18,12 +18,12 @@ export default {
     {
       image: 'medication-therapy.jpg',
       title: 'Medication Therapy Management',
-      link: 'medication-therapy-management',
+      link: 'product/medication',
     },
     {
       image: 'immunizations.jpg',
-      title: 'Immunizations',
-      link: 'immunizations',
+      title: 'Vaccinations',
+      link: 'product/vaccination',
     },
     {
       image: 'integrative-medicine.jpg',

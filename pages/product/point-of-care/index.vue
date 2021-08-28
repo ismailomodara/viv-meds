@@ -74,6 +74,7 @@
 <script>
 import PageHeader from '@/components/Website/PageHeader'
 import ScheduleConsultation from '@/components/Website/ScheduleConsultation'
+import getSiteMeta from '@/utils/getSiteMeta'
 
 export default {
   name: 'PointOfCare',
@@ -87,6 +88,36 @@ export default {
       image: 'point-of-care.jpg',
       imageFolder: 'services',
     }
+  },
+  head() {
+    return {
+      title: 'Point of Care Healthcare',
+      meta: [...this.meta],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `https://vivmeds.com/product/point-of-care`,
+        },
+      ],
+    }
+  },
+  computed: {
+    meta() {
+      const metaData = [
+        {
+          title: 'Point of Care Healthcare',
+          description: '',
+          url: `https://vivmeds.com/product/point-of-care`,
+        },
+        {
+          name: 'keywords',
+          content:
+            'Point of care healthcare, Point of care Denton, Point of care testing PPT, Point of care diagnostics',
+        },
+      ]
+      return getSiteMeta(metaData)
+    },
   },
 }
 </script>

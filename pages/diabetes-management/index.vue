@@ -141,6 +141,7 @@
 import PageHeader from '@/components/Website/PageHeader'
 import PieChart from '@/components/Website/PieChart'
 import ScheduleConsultation from '@/components/Website/ScheduleConsultation'
+import getSiteMeta from '@/utils/getSiteMeta'
 
 export default {
   name: 'DiabetesManagement',
@@ -155,6 +156,36 @@ export default {
       image: 'diabetes.jpg',
       imageFolder: 'services',
     }
+  },
+  head() {
+    return {
+      title: 'Diabetes Treatment',
+      meta: [...this.meta],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `https://vivmeds.com/diabetes-management`,
+        },
+      ],
+    }
+  },
+  computed: {
+    meta() {
+      const metaData = [
+        {
+          title: 'Diabetes Treatment',
+          description: '',
+          url: `https://vivmeds.com/diabetes-management`,
+        },
+        {
+          name: 'keywords',
+          content:
+            'Diabetes causes, type 1 diabetes, type 2 diabetes, diabetes treatment in Denton, diabetes symptoms, diabetes prevention, best treatment for diabetes',
+        },
+      ]
+      return getSiteMeta(metaData)
+    },
   },
 }
 </script>
