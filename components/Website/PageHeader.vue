@@ -49,6 +49,7 @@ export default {
     h2 {
       color: #6a8b2c;
       margin-bottom: 40px;
+      font-size: 2rem;
     }
   }
 
