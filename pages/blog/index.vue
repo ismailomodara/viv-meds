@@ -20,6 +20,7 @@
 <script>
 import BlogCard from '@/components/Blog/BlogCard'
 import request from '@/controller/request'
+import getSiteMeta from '@/utils/getSiteMeta'
 
 export default {
   name: 'Blog',
@@ -34,6 +35,37 @@ export default {
       imageUrl: '',
       blog: [],
     }
+  },
+  head() {
+    return {
+      title: 'Health Blog | Vivmeds PharmacyDenton TX 76210',
+      meta: [...this.meta],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `https://vivmeds.com/blog`,
+        },
+      ],
+    }
+  },
+  computed: {
+    meta() {
+      const metaData = [
+        {
+          title: 'Health Blog | Vivmeds PharmacyDenton TX 76210',
+          description:
+            'Living in Denton TX? Need effective healthy living tips? Read about | Nutrition and Wellness habits tailored to the needs community - written by Professional!',
+          url: `https://vivmeds.com/blog`,
+        },
+        {
+          name: 'keywords',
+          content:
+            'vaccination, travel vaccination in Denton, immunization, yellow fever vaccine',
+        },
+      ]
+      return getSiteMeta(metaData)
+    },
   },
   created() {
     this.getArticles()

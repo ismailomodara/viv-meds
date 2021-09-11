@@ -159,7 +159,8 @@ export default {
   },
   head() {
     return {
-      title: 'Diabetes Treatment',
+      title:
+        'Diabetes Management | Type 2 | Type 1 Diabetes | Free Consultation',
       meta: [...this.meta],
       link: [
         {
@@ -174,8 +175,12 @@ export default {
     meta() {
       const metaData = [
         {
-          title: 'Diabetes Treatment',
-          description: '',
+          title:
+            'Diabetes Management | Type 2 | Type 1 Diabetes | Free Consultation',
+          description:
+            'Need Diabetes Care? Vivmeds Pharmacy provides diabetes\n' +
+            ' diabetes \n' +
+            'management education/training programs to help you\n',
           url: `https://vivmeds.com/diabetes-management`,
         },
         {

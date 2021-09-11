@@ -132,6 +132,7 @@
 <script>
 import PageHeader from '@/components/Website/PageHeader'
 import ScheduleConsultation from '@/components/Website/ScheduleConsultation'
+import getSiteMeta from '@/utils/getSiteMeta'
 
 export default {
   name: 'IntegrativeMedicine',
@@ -145,6 +146,37 @@ export default {
       image: 'integrative-medicine.jpg',
       imageFolder: 'services',
     }
+  },
+  head() {
+    return {
+      title: 'Integrative Medicine | VivmedsPharmacy | Denton TX 76210',
+      meta: [...this.meta],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `https://vivmeds.com/integrative-medicine`,
+        },
+      ],
+    }
+  },
+  computed: {
+    meta() {
+      const metaData = [
+        {
+          title: 'Integrative Medicine | VivmedsPharmacy | Denton TX 76210',
+          description:
+            'We combine both functional and integrative approaches you get to the root cause of disease to optimize wellness \n' +
+            'life. Book a Consultation now by calling\n',
+          url: `https://vivmeds.com/integrative-medicine`,
+        },
+        {
+          name: 'keywords',
+          content: 'integrative medicine',
+        },
+      ]
+      return getSiteMeta(metaData)
+    },
   },
 }
 </script>

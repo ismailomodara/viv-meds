@@ -109,6 +109,7 @@
 <script>
 import validations from '@/mixin/validations'
 import request from '@/controller/request'
+import getSiteMeta from '@/utils/getSiteMeta'
 
 export default {
   name: 'ContactUs',
@@ -124,6 +125,43 @@ export default {
       validations,
       submitting: false,
     }
+  },
+  head() {
+    return {
+      title:
+        'Contact Us | Vivmeds Pharmacy Unicorn Lake Blvd Suite 280 Denton76210',
+      meta: [...this.meta],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `https://vivmeds.com/contact-us`,
+        },
+      ],
+    }
+  },
+  computed: {
+    meta() {
+      const metaData = [
+        {
+          title:
+            'Contact Us | Vivmeds Pharmacy Unicorn Lake Blvd Suite 280 Denton76210',
+          description:
+            'Vivmeds Pharmacy | 3303 Unicorn Lake Blvd Suite 280 DentonTX\n' +
+            ' | 303 \n' +
+            '76210. Call us: 940-2264-849. Email: pharmacy@vivmeds.com TX\n',
+          url: `https://vivmeds.com/contact-us`,
+        },
+        {
+          name: 'keywords',
+          content:
+            'Vivmeds Pharmacy | 3303 Unicorn Lake Blvd Suite 280 DentonTX\n' +
+            ' | 303 \n' +
+            '76210. Call us: 940-2264-849. Email: pharmacy@vivmeds.com TX\n',
+        },
+      ]
+      return getSiteMeta(metaData)
+    },
   },
   methods: {
     submit() {

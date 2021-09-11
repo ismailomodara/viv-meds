@@ -173,7 +173,7 @@ export default {
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: `https://vivmeds.com/product/medication`,
+          href: `https://vivmeds.com/medication-theraphy-management`,
         },
       ],
     }
@@ -184,7 +184,7 @@ export default {
         {
           title: 'Medication Therapy Management',
           description: '',
-          url: `https://vivmeds.com/product/medication`,
+          url: `https://vivmeds.com/medication-therapy-management`,
         },
         {
           name: 'keywords',

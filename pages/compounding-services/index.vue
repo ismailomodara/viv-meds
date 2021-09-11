@@ -74,6 +74,7 @@ import config from '@/mixin/services-config'
 import PageHeader from '@/components/Website/PageHeader'
 import ServiceCard from '@/components/Home/ServiceCard'
 import ScheduleConsultation from '@/components/Website/ScheduleConsultation'
+import getSiteMeta from '@/utils/getSiteMeta'
 
 export default {
   name: 'CompoundingServices',
@@ -89,6 +90,39 @@ export default {
       imageFolder: 'services',
       compoundingServices: config.compoundingServices,
     }
+  },
+  head() {
+    return {
+      title: 'Compounding Pharmacy | VivmedsPharmacy | Denton TX 76210',
+      meta: [...this.meta],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `https://vivmeds.com/diabetes-management`,
+        },
+      ],
+    }
+  },
+  computed: {
+    meta() {
+      const metaData = [
+        {
+          title: 'Compounding Pharmacy | VivmedsPharmacy | Denton TX 76210',
+          description:
+            'Podiatry, Dermatology, Pain Management, Pediatrics, Wound and Scar treatment, Pet Care, Palliative Care, Dentistry, Women’s \n' +
+            'Men’s Compounding Medicine. Visit us at Vivmeds Pharmacy\n',
+          url: `https://vivmeds.com/diabetes-management`,
+        },
+        {
+          name: 'keywords',
+          content:
+            'Podiatry, Dermatology, Pain Management, Pediatrics, Wound and Scar treatment, Pet Care, Palliative Care, Dentistry, Women’s \n' +
+            'Men’s Compounding Medicine. Visit us at Vivmeds Pharmacy\n',
+        },
+      ]
+      return getSiteMeta(metaData)
+    },
   },
 }
 </script>

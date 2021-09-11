@@ -97,7 +97,7 @@ export default {
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: `https://vivmeds.com/product/point-of-care`,
+          href: `https://vivmeds.com/point-of-care`,
         },
       ],
     }
@@ -108,7 +108,7 @@ export default {
         {
           title: 'Point of Care Healthcare',
           description: '',
-          url: `https://vivmeds.com/product/point-of-care`,
+          url: `https://vivmeds.com/point-of-care`,
         },
         {
           name: 'keywords',

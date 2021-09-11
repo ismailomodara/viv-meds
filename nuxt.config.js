@@ -8,7 +8,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'VivMeds Pharmacy',
+    title: 'Vivmeds Pharmacy | 303 Unicorn Blvd Suite 280 Denton TX 76210',
     htmlAttrs: {
       lang: 'en',
     },
@@ -23,12 +23,12 @@ export default {
       {
         name: 'description',
         content:
-          'At Vivmeds Pharmacy , we work directly with you to determine where there may be medication-related problems or concerns. Medication management will ensure that all of your medications are consistent with each other and with you.',
+          'Vivmeds Pharmacy in Denton TX provides disease management, affordable prescription medications and compounding services in a compassionate environment.',
       },
       {
         name: 'keywords',
         content:
-          'VivMeds Pharmacy, Vivmeds, vivmeds, viv-meds, pharmacy, compounding services, covid-19',
+          'VivMeds Pharmacy, Vivmeds, vivmeds, viv-meds, pharmacy, compounding services, covid-19, Pharmacy in Denton TX,  disease management, affordable prescription medications, compassionate environment, affordable prescription medications and compounding services',
       },
 
       // Schema.org markup for Google+
@@ -51,7 +51,7 @@ export default {
       {
         name: 'twitter:description',
         content:
-          'At Vivmeds Pharmacy , we work directly with you to determine where there may be medication-related problems or concerns. Medication management will ensure that all of your medications are consistent with each other and with you.',
+          'Vivmeds Pharmacy in Denton TX provides disease management, affordable prescription medications and compounding services in a compassionate environment.',
       },
       { name: 'twitter:app:country', content: 'NG' },
       { name: 'twitter:creator', content: '@vivmeds' },
@@ -71,7 +71,7 @@ export default {
       {
         property: 'og:description',
         content:
-          'At Vivmeds Pharmacy , we work directly with you to determine where there may be medication-related problems or concerns. Medication management will ensure that all of your medications are consistent with each other and with you',
+          'Vivmeds Pharmacy in Denton TX provides disease management, affordable prescription medications and compounding services in a compassionate environment.',
       },
       { property: 'og:type', content: 'website' },
       { property: 'og:site_name', content: 'VivMeds Pharmacy' },

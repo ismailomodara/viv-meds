@@ -18,12 +18,12 @@ export default {
     {
       image: 'medication-therapy.jpg',
       title: 'Medication Therapy Management',
-      link: 'medication',
+      link: 'medication-therapy-management',
     },
     {
       image: 'immunizations.jpg',
-      title: 'Vaccinations',
-      link: 'vaccination',
+      title: 'Immunizations',
+      link: 'immunizations',
     },
     {
       image: 'integrative-medicine.jpg',

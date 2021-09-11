@@ -140,13 +140,13 @@ export default {
   },
   head() {
     return {
-      title: 'Immunizations and Travel Vaccination',
+      title: 'Vaccination | Flu Shot | Covid-19 | Vivmeds Pharmacy',
       meta: [...this.meta],
       link: [
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: `https://vivmeds.com/product/vaccination`,
+          href: `https://vivmeds.com/immunizations`,
         },
       ],
     }
@@ -155,9 +155,10 @@ export default {
     meta() {
       const metaData = [
         {
-          title: 'Immunizations and Travel Vaccination',
-          description: '',
-          url: `https://vivmeds.com/product/vaccination`,
+          title: 'Vaccination | Flu Shot | Covid-19| Vivmeds Pharmacy',
+          description:
+            'Get COVID-19 Vaccination, Flu shots and travel vaccination at Vivmeds Pharmacy, 3303 Unicorn Lake Blvd Suite 280 DentonTX762',
+          url: `https://vivmeds.com/immunizations`,
         },
         {
           name: 'keywords',

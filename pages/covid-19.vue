@@ -213,6 +213,7 @@
 import validations from '@/mixin/validations'
 import Faq from '@/components/Faq'
 import request from '@/controller/request'
+import getSiteMeta from '@/utils/getSiteMeta'
 
 export default {
   name: 'Covid19',
@@ -238,6 +239,40 @@ export default {
       submitting: false,
       validations,
     }
+  },
+  head() {
+    return {
+      title: 'Free Covid-19 Testing, VaccinationVivmeds Pharmacy, Denton TX',
+      meta: [...this.meta],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `https://vivmeds.com/covid-19`,
+        },
+      ],
+    }
+  },
+  computed: {
+    meta() {
+      const metaData = [
+        {
+          title:
+            'Free Covid-19 Testing, Vaccination Vivmeds Pharmacy, Denton TX',
+          description:
+            'Get COVID-19 Testing and Vaccination at Vivmeds Pharmacy, 303\n' +
+            ' | \n' +
+            'Unicorn Lake Blvd Suite 280 Denton TX 76210.\n',
+          url: `https://vivmeds.com/covid-19`,
+        },
+        {
+          name: 'keywords',
+          content:
+            'vaccination, travel vaccination in Denton, immunization, yellow fever vaccine',
+        },
+      ]
+      return getSiteMeta(metaData)
+    },
   },
   methods: {
     submit() {
