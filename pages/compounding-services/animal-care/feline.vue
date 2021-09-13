@@ -36,7 +36,7 @@ export default {
   data() {
     return {
       title: 'Feline Product Guide',
-      image: 'feline-product-guide.jpg',
+      image: 'feline-product-guide.webp',
       imageFolder: 'compounding/animal-care',
       activeGuide: '',
       guides: config.feline,

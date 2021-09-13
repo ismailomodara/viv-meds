@@ -126,7 +126,7 @@ export default {
   data() {
     return {
       title: 'Dentistry',
-      image: 'dentistry.jpg',
+      image: 'dentistry.webp',
       imageFolder: 'compounding',
     }
   },

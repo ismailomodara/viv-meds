@@ -94,7 +94,7 @@ export default {
   data() {
     return {
       title: 'Hospice & Palliative Medicine',
-      image: 'hospice-and-palliative-medicine.jpg',
+      image: 'hospice-and-palliative-medicine.webp',
       imageFolder: 'compounding',
     }
   },

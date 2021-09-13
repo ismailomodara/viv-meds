@@ -1,94 +1,94 @@
 export default {
   services: [
     {
-      image: 'compounding.jpg',
+      image: 'compounding.webp',
       title: 'Compounding Services',
       link: 'compounding-services',
     },
     {
-      image: 'point-of-care.jpg',
+      image: 'point-of-care.webp',
       title: 'Point-of-Care Testing Services',
       link: 'point-of-care',
     },
     {
-      image: 'diabetes.jpg',
+      image: 'diabetes.webp',
       title: 'Diabetes Management',
       link: 'diabetes-management',
     },
     {
-      image: 'medication-therapy.jpg',
+      image: 'medication-therapy.webp',
       title: 'Medication Therapy Management',
       link: 'medication-therapy-management',
     },
     {
-      image: 'immunizations.jpg',
+      image: 'immunizations.webp',
       title: 'Immunizations',
       link: 'immunizations',
     },
     {
-      image: 'integrative-medicine.jpg',
+      image: 'integrative-medicine.webp',
       title: 'Integrative Medicine',
       link: 'integrative-medicine',
     },
     {
-      image: 'cessation.jpg',
+      image: 'cessation.webp',
       title: 'Smoking Cessation',
       link: 'cessation',
     },
     {
-      image: 'animal-care.jpg',
+      image: 'animal-care.webp',
       title: 'Veterinary Compounding',
       link: 'animal-care',
     },
   ],
   compoundingServices: [
     {
-      image: 'compounding-medications-for-podiatry-concerns.jpg',
+      image: 'compounding-medications-for-podiatry-concerns.webp',
       title: 'Podiatry',
       link: 'podiatry',
     },
     {
-      image: 'compounding-medications-for-women-health.jpg',
+      image: 'compounding-medications-for-women-health.webp',
       title: 'Compounding Medications for Women’s Health',
       link: 'women-health',
     },
     {
-      image: 'dentistry.jpg',
+      image: 'dentistry.webp',
       title: 'Dentistry',
       link: 'dentistry',
     },
     {
-      image: 'dermatology.jpg',
+      image: 'dermatology.webp',
       title: 'Dermatology',
       link: 'dermatology',
     },
     {
-      image: 'hospice-and-palliative-medicine.jpg',
+      image: 'hospice-and-palliative-medicine.webp',
       title: 'Hospice & Palliative Medicine',
       link: 'hospice',
     },
     {
-      image: 'men-healthcare-and-wellness.jpg',
+      image: 'men-healthcare-and-wellness.webp',
       title: "Men's Healthcare and Wellness",
       link: 'men-health',
     },
     {
-      image: 'pain-management.jpg',
+      image: 'pain-management.webp',
       title: 'Pain Management',
       link: 'pain-management',
     },
     {
-      image: 'pediatrics.jpg',
+      image: 'pediatrics.webp',
       title: 'Pediatrics',
       link: 'pediatrics',
     },
     {
-      image: 'wound-and-scar-therapy.jpg',
+      image: 'wound-and-scar-therapy.webp',
       title: 'Wound & Scar Therapy',
       link: 'wound-and-scar',
     },
     {
-      image: 'animal-care.jpg',
+      image: 'animal-care.webp',
       title: 'Animal Care',
       link: 'animal-care',
     },
@@ -96,22 +96,22 @@ export default {
   animalCare: [
     {
       title: 'Canine Product Guide',
-      image: 'canine-product-guide.jpg',
+      image: 'canine-product-guide.webp',
       link: 'canine',
     },
     {
       title: 'Equine Product Guide',
-      image: 'equine-product-guide.jpg',
+      image: 'equine-product-guide.webp',
       link: 'equine',
     },
     {
       title: 'Feline Product Guide',
-      image: 'feline-product-guide.jpg',
+      image: 'feline-product-guide.webp',
       link: 'feline',
     },
     {
       title: 'Veterinary Compound & Pet Medications',
-      image: 'veterinary-compound.jpg',
+      image: 'veterinary-compound.webp',
       link: 'veterinary',
     },
   ],

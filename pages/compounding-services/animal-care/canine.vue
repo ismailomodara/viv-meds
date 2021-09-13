@@ -36,7 +36,7 @@ export default {
   data() {
     return {
       title: 'Canine Product Guide',
-      image: 'canine-product-guide.jpg',
+      image: 'canine-product-guide.webp',
       imageFolder: 'compounding/animal-care',
       activeGuide: '',
       guides: config.canine,

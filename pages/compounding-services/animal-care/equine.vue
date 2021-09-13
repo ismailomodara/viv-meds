@@ -36,7 +36,7 @@ export default {
   data() {
     return {
       title: 'Equine Product Guide',
-      image: 'equine-product-guide.jpg',
+      image: 'equine-product-guide.webp',
       imageFolder: 'compounding/animal-care',
       activeGuide: '',
       guides: config.equine,

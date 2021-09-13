@@ -189,7 +189,7 @@ export default {
   data() {
     return {
       title: 'Schedule a Wellness Consultation',
-      image: 'schedule-consultation.jpg',
+      image: 'schedule-consultation.webp',
       imageFolder: 'prescriptions',
       form: {
         first_name: '',

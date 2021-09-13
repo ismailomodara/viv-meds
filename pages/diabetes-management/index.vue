@@ -153,7 +153,7 @@ export default {
   data() {
     return {
       title: 'Diabetes Management',
-      image: 'diabetes.jpg',
+      image: 'diabetes.webp',
       imageFolder: 'services',
     }
   },

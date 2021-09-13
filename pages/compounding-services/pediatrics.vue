@@ -112,7 +112,7 @@ export default {
   data() {
     return {
       title: 'Pediatrics',
-      image: 'pediatrics.jpg',
+      image: 'pediatrics.webp',
       imageFolder: 'compounding',
     }
   },

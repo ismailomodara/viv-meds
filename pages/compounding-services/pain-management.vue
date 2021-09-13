@@ -110,7 +110,7 @@ export default {
   data() {
     return {
       title: 'Pain Management',
-      image: 'pain-management.jpg',
+      image: 'pain-management.webp',
       imageFolder: 'compounding',
     }
   },
