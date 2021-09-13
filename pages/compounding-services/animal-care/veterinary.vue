@@ -124,7 +124,7 @@ export default {
   data() {
     return {
       title: 'Veterinary Compounds & Pet Medications',
-      image: 'veterinary-compound.webp',
+      image: 'veterinary-compound.jpg',
       imageFolder: 'compounding/animal-care',
     }
   },

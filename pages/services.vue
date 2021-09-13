@@ -44,7 +44,7 @@ export default {
   mixins: [image],
   data() {
     return {
-      image: 'medication-therapy.webp',
+      image: 'medication-therapy.jpg',
       imageFolder: 'services',
       services: config.services,
     }

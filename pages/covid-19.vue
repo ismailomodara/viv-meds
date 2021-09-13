@@ -223,7 +223,7 @@ export default {
   data() {
     return {
       title: 'Covid-19',
-      image: 'covid-19.webp',
+      image: 'covid-19.jpg',
       form: {
         first_name: '',
         last_name: '',

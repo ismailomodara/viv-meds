@@ -99,7 +99,7 @@ export default {
   data() {
     return {
       title: 'Immunizations',
-      image: 'immunizations.webp',
+      image: 'immunizations.jpg',
       imageFolder: 'services',
       activeVaccination: '',
       vaccinations: [

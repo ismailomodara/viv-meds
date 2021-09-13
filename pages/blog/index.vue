@@ -31,7 +31,7 @@ export default {
     return {
       loading: false,
       title: 'Blog',
-      image: 'blog.webp',
+      image: 'blog.jpg',
       imageUrl: '',
       blog: [],
     }

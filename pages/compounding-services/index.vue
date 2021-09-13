@@ -86,7 +86,7 @@ export default {
   data() {
     return {
       title: 'Compounding Services',
-      image: 'compounding.webp',
+      image: 'compounding.jpg',
       imageFolder: 'services',
       compoundingServices: config.compoundingServices,
     }

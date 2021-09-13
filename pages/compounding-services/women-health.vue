@@ -88,7 +88,7 @@ export default {
   data() {
     return {
       title: "Compounding Services for Women's Health",
-      image: 'compounding-medications-for-women-health.webp',
+      image: 'compounding-medications-for-women-health.jpg',
       imageFolder: 'compounding',
     }
   },

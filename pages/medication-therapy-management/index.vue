@@ -161,7 +161,7 @@ export default {
   data() {
     return {
       title: 'Medication Therapy Management',
-      image: 'medication-therapy.webp',
+      image: 'medication-therapy.jpg',
       imageFolder: 'services',
     }
   },

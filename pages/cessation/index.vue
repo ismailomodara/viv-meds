@@ -121,7 +121,7 @@ export default {
   data() {
     return {
       title: 'Smoking Cessation',
-      image: 'cessation.webp',
+      image: 'cessation.jpg',
       imageFolder: 'services',
     }
   },

@@ -15,7 +15,7 @@ export default {
   data() {
     return {
       title: 'Animal Care',
-      image: 'animal-care.webp',
+      image: 'animal-care.jpg',
       imageFolder: 'services',
     }
   },

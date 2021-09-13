@@ -99,7 +99,7 @@ export default {
   data() {
     return {
       title: 'Automatic Refill Request',
-      image: 'auto-refill.webp',
+      image: 'auto-refill.jpg',
       imageFolder: 'prescriptions',
       form: {
         first_name: '',

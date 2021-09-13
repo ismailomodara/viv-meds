@@ -186,7 +186,7 @@ export default {
   data() {
     return {
       title: 'Prescription Transfer Request form',
-      image: 'transfer-prescriptions.webp',
+      image: 'transfer-prescriptions.jpg',
       imageFolder: 'prescriptions',
       form: {
         first_name: '',

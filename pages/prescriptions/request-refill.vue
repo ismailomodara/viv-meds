@@ -88,7 +88,7 @@ export default {
   data() {
     return {
       title: 'Prescription Refill Request',
-      image: 'request-refill.webp',
+      image: 'request-refill.jpg',
       imageFolder: 'prescriptions',
       form: {
         first_name: '',

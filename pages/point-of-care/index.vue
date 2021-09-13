@@ -85,7 +85,7 @@ export default {
   data() {
     return {
       title: 'Point-Of-Care Testing Services',
-      image: 'point-of-care.webp',
+      image: 'point-of-care.jpg',
       imageFolder: 'services',
     }
   },

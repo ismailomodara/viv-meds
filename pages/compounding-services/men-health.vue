@@ -108,7 +108,7 @@ export default {
   data() {
     return {
       title: "Men's Health Care & Wellness",
-      image: 'men-healthcare-and-wellness.webp',
+      image: 'men-healthcare-and-wellness.jpg',
       imageFolder: 'compounding',
     }
   },

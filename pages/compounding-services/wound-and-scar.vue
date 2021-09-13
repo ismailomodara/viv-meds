@@ -135,7 +135,7 @@ export default {
   data() {
     return {
       title: 'Wound & Scar Therapy',
-      image: 'wound-and-scar-therapy.webp',
+      image: 'wound-and-scar-therapy.jpg',
       imageFolder: 'compounding',
     }
   },

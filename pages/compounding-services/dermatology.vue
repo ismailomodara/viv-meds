@@ -133,7 +133,7 @@ export default {
   data() {
     return {
       title: 'Dermatology',
-      image: 'dermatology.webp',
+      image: 'dermatology.jpg',
       imageFolder: 'compounding',
     }
   },

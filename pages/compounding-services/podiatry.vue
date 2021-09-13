@@ -114,7 +114,7 @@ export default {
   data() {
     return {
       title: 'Podiatry',
-      image: 'compounding-medications-for-podiatry-concerns.webp',
+      image: 'compounding-medications-for-podiatry-concerns.jpg',
       imageFolder: 'compounding',
     }
   },
