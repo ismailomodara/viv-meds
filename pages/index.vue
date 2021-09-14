@@ -7,10 +7,7 @@
           <nuxt-link :to="`/prescriptions/${cta.link}`">
             <div class="vm-home-action">
               <div class="vm-home-action__icon">
-                <img
-                  :src="getImage(`${cta.icon}.svg`, 'home')"
-                  :alt="cta.icon"
-                />
+                <img :src="getImage(`${cta.icon}`, 'home')" :alt="cta.icon" />
               </div>
               <p>{{ cta.title }}</p>
             </div>
@@ -72,22 +69,22 @@ export default {
     return {
       ctas: [
         {
-          icon: 'transfer',
+          icon: 'transfer_kmxd9i.svg',
           title: 'Transfer your Prescriptions',
           link: 'transfer',
         },
         {
-          icon: 'refill',
+          icon: 'refill_xvutgx.svg',
           title: 'Refill Prescriptions',
           link: 'request-refill',
         },
         {
-          icon: 'auto-refill',
+          icon: 'auto-refill_mhaiih.svg',
           title: 'Automatic Refill Request',
           link: 'auto-refill',
         },
         {
-          icon: 'schedule',
+          icon: 'schedule_rijobw.svg',
           title: 'Schedule a Wellness Consultation',
           link: 'schedule-consultation',
         },

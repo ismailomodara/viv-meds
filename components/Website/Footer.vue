@@ -4,7 +4,7 @@
       <el-row type="flex" class="flex-wrap">
         <el-col :md="5" :lg="5">
           <div class="vm-footer__logo">
-            <img :src="getImage('vivmeds-logo.svg')" alt="VivMeds" />
+            <img :src="getLogo('regular')" alt="VivMeds" />
           </div>
         </el-col>
         <el-col :md="6" :lg="6">

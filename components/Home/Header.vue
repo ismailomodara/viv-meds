@@ -17,7 +17,7 @@
           @click="setActive(index)"
         >
           <div class="overlay"></div>
-          <img :src="getImage(`${slide.image}.jpg`, 'services')" alt="" />
+          <img :src="getImage(`${slide.image}`, 'services')" alt="" />
           <div
             :class="[
               'vm-hero__container-content',
@@ -143,49 +143,49 @@ export default {
         {
           title: '',
           description: '',
-          image: 'pharmacy',
+          image: 'pharmacy_t3gl5c.jpg',
         },
         {
           title: 'Medication Therapy Management',
           description:
             'At Vivmeds Pharmacy , we work directly with you to determine where there may be medication-related problems or concerns. Medication management will ensure that all of your medications are consistent with each other and with you.',
-          image: 'medication-therapy',
+          image: 'medication-therapy_wdozyo.jpg',
         },
         {
           title: 'Diabetes Management',
           description:
             'We have expanded diabetes care services to improve the health of the community by providing ancillary services such as diabetes self-management education/training (DSME/T) programs.',
-          image: 'diabetes',
+          image: 'diabetes_yqvu34.jpg',
         },
         {
           title: 'Immunizations',
           description:
             'We have the CDC-recommended vaccines you need, administered by an immunization-trained pharmacist.',
-          image: 'immunizations',
+          image: 'immunizations_ptxaex.jpg',
         },
         {
           title: 'Integrative Medicine',
           description:
             'We combine both functional and integrative approaches to help you get to the root cause of disease to optimize wellness in your life.\n' +
             'Our integrative approach to care at Vivmeds Pharmacy starts with advanced prevention.',
-          image: 'integrative-medicine',
+          image: 'integrative-medicine_lmsw7d.jpg',
         },
         {
           title: 'Point-of-Care Services',
           description:
             'As a wellness community pharmacy practice, our point of care testing service  will not only help reduce the overall cost incurred by a patient or third-party payer for a health care encounter, it also introduces the possibility to provide the patient with the most cost-effective service.',
-          image: 'point-of-care',
+          image: 'point-of-care_hrzick.jpg',
         },
         {
           title: 'Animal Care',
           description:
             'We provide the best Animal care services for your pets at an affordable cost.',
-          image: 'animal-care',
+          image: 'animal-care_daup8o.jpg',
         },
         {
           title: '',
           description: '',
-          image: 'free-delivery',
+          image: 'free-delivery_eapjmr.jpg',
         },
       ],
     }

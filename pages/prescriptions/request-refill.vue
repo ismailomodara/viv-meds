@@ -88,7 +88,7 @@ export default {
   data() {
     return {
       title: 'Prescription Refill Request',
-      image: 'request-refill.jpg',
+      image: 'request-refill_usts05.jpg',
       imageFolder: 'prescriptions',
       form: {
         first_name: '',

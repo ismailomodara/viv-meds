@@ -34,7 +34,7 @@ export default {
   data() {
     return {
       title: 'Animal Care',
-      image: 'animal-care.jpg',
+      image: 'animal-care_daup8o.jpg',
       imageFolder: 'compounding',
       services: config.animalCare,
     }

@@ -161,7 +161,7 @@ export default {
   data() {
     return {
       title: 'Medication Therapy Management',
-      image: 'medication-therapy.jpg',
+      image: 'medication-therapy_wdozyo.jpg',
       imageFolder: 'services',
     }
   },

@@ -5,7 +5,7 @@
         <el-container>
           <nuxt-link to="/"
             ><div class="vm-navbar__logo">
-              <img :src="getImage('vivmeds-logo.svg')" alt="VivMeds" /></div
+              <img :src="getLogo('regular')" alt="VivMeds" /></div
           ></nuxt-link>
           <div class="vm-navbar__strip-content hidden-md-and-down">
             <h6>
@@ -45,7 +45,7 @@
         <el-container>
           <nuxt-link to="/"
             ><div :class="['vm-navbar__logo', { show: hideNavbarStrip }]">
-              <img :src="getImage('vivmeds-logo-white.svg')" alt="" /></div
+              <img :src="getLogo('white')" alt="" /></div
           ></nuxt-link>
           <div class="vm-navbar__menu-toggler" @click="toggleNav">
             <svg

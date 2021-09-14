@@ -143,7 +143,7 @@ export default {
   data() {
     return {
       title: 'Integrative Medicine',
-      image: 'integrative-medicine.jpg',
+      image: 'integrative-medicine_lmsw7d.jpg',
       imageFolder: 'services',
     }
   },

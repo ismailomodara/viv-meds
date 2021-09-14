@@ -31,7 +31,7 @@ export default {
     return {
       loading: false,
       title: 'Blog',
-      image: 'blog.jpg',
+      image: 'blog_hjzmz8.jpg',
       imageUrl: '',
       blog: [],
     }

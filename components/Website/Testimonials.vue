@@ -45,7 +45,7 @@ export default {
     return {
       testimonials: [
         {
-          image: 'pharmacy.jpg',
+          image: 'pharmacy_t3gl5c.jpg',
           customer: 'RM Kulkarni',
           rating: 5,
           time: 'a day ago',
@@ -53,7 +53,7 @@ export default {
             'We used VivMed for Covid vaccinations. Their service is very professional, systematic and caring. The staff is very friendly, caring and respected our time. The premises are spic and span. We recommend VivMeds to every one for all their pharmaceutical needs',
         },
         {
-          image: 'pharmacy.jpg',
+          image: 'pharmacy_t3gl5c.jpg',
           customer: 'Linda Hanley',
           rating: 5,
           time: 'a day ago',
@@ -63,7 +63,7 @@ export default {
             'Thank you VivMed Pharmacy for taking such good care of me, your personal touch, and for loving me so much! You are truly appreciated!!',
         },
         {
-          image: 'pharmacy.jpg',
+          image: 'pharmacy_t3gl5c.jpg',
           customer: 'Yesi Hernandez',
           rating: 5,
           time: 'a day ago',
@@ -71,7 +71,7 @@ export default {
             'I have the privilege of working at this outstanding establishment. The owners have made me feel at home while staying professional and welcoming. I’ve worked at major chains where the pharmacists don’t have personal ties to the customers but at Vivmeds the owners know every customer by their first name! I’m continually amazed at how much love and passion they put into their work each and every day. I’ve worked at many pharmacies and I think Vivmeds Pharmacy takes the trophy for the best one ever!',
         },
         {
-          image: 'pharmacy.jpg',
+          image: 'pharmacy_t3gl5c.jpg',
           customer: 'Aditya A. Joshi',
           rating: 5,
           time: '2 days ago',
@@ -79,7 +79,7 @@ export default {
             'Got the Moderna vaccine today! Excellent and safe service. Did all the paperwork in our car - the owner went around to all the cars in the parking lot handling out paperwork and keeping us updated on status an timing. Very caring folks.',
         },
         {
-          image: 'pharmacy.jpg',
+          image: 'pharmacy_t3gl5c.jpg',
           customer: 'LaHoussine Yassini',
           rating: 5,
           time: '3 days ago',
@@ -87,7 +87,7 @@ export default {
             'Great experience, and outstanding customer service. Keep up the good work.',
         },
         {
-          image: 'pharmacy.jpg',
+          image: 'pharmacy_t3gl5c.jpg',
           customer: 'Matt Moore',
           rating: 5,
           time: '2 days ago',
@@ -95,7 +95,7 @@ export default {
             'Outstanding customer service and the staff there are very knowledgeable and welcoming! They truly care about their customers and their health and well-being. They weill even do all of the work for you to have your prescriptions transferred. An added bonus, they deliver within a certain radius. If you are looking for a top notch pharmacy, look no further, VivMed Pharmacy is the complete package.',
         },
         {
-          image: 'pharmacy.jpg',
+          image: 'pharmacy_t3gl5c.jpg',
           customer: 'Patrica Arps',
           rating: 5,
           time: '5 months ago',
@@ -103,7 +103,7 @@ export default {
             "Dr. Maria Dominic, the Pharmacist at VivMeds, continues to amaze us with the quality of  customer service, hands-on-care, and the knowledge possessed regarding homeopathic remedies. Dr Dominic provides follow-up care and has even called after hours on occasion to ensure new medication use is followed. This is hte kind of pharmaceutical, hands-on experience that you cannot get at your typical competitors, and they are constantly available during store hours. I am so glad we found them! We highly recommend VivMes. It's the most personalble pharmcy care that you will ever experience",
         },
         {
-          image: 'pharmacy.jpg',
+          image: 'pharmacy_t3gl5c.jpg',
           customer: 'Adriene Renae',
           rating: 5,
           time: 'a month ago',
@@ -111,7 +111,7 @@ export default {
             'Great family owned business! Love supporting this local family!',
         },
         {
-          image: 'pharmacy.jpg',
+          image: 'pharmacy_t3gl5c.jpg',
           customer: 'Anne Linda',
           rating: 5,
           time: '5 month ago',
@@ -119,7 +119,7 @@ export default {
             'I have been getting my wellness supplements for over a month now and the results have been amazing. I have been having sleeping difficulties for so long, but my sleep has improved and I am feeling more energetic',
         },
         {
-          image: 'pharmacy.jpg',
+          image: 'pharmacy_t3gl5c.jpg',
           customer: 'PJ Rasmussen',
           rating: 5,
           time: 'a month ago',
@@ -127,7 +127,7 @@ export default {
             "Best pharmacy and care I've ever received by a mile! I just moved here from out of state and they were able to get me my meds while my insurance changes were being figured out, and at the same price as my old plan. I recently was sick with Covid, and they delivered meds to my door for free. They also called and texted to check in, which was much appreciated!",
         },
         {
-          image: 'pharmacy.jpg',
+          image: 'pharmacy_t3gl5c.jpg',
           customer: 'Robert SO',
           rating: 5,
           time: '4 months ago',
@@ -135,7 +135,7 @@ export default {
             'Vivmeds Pharmacy has proven exceptional in the way they deliver my medications. They are quite effective and on time. The pharmacy had made things better since I switched from CVS pharmacy in my area to Vivmeds Pharmacy.',
         },
         {
-          image: 'pharmacy.jpg',
+          image: 'pharmacy_t3gl5c.jpg',
           customer: 'Rosella Elice',
           rating: 5,
           time: '4 months ago',
@@ -143,7 +143,7 @@ export default {
             'I have been having some leaky gut issues that made me constipated and bloat terribly for a while, and recently I had the opportunity to consult with the pharmacist at Vivmeds Pharmacy. She recommended some integrative and holistic management of the symptoms using professional grades dietary supplements. To my surprise, I have experienced a significant improvement in my symptoms. I really appreciate the professionalism and th attentiveness of the Pharmacist. I will definitely recommend this Pharmacy to anyone seeking alternative approach to treatment or a general wellness help. ',
         },
         {
-          image: 'pharmacy.jpg',
+          image: 'pharmacy_t3gl5c.jpg',
           customer: 'Angela G',
           rating: 5,
           time: 'A week ago',
@@ -151,7 +151,7 @@ export default {
             'The owners are amazing. First class customer service with delivery. Always friendly and helpful.',
         },
         {
-          image: 'pharmacy.jpg',
+          image: 'pharmacy_t3gl5c.jpg',
           customer: 'Dan Rose',
           rating: 5,
           time: '5 months ago',
@@ -159,7 +159,7 @@ export default {
             'My experience with VivMeds pharmacy is just so easy, my former pharmacy would have me going in between my insurer and the hospital to resolve issues. VivMeds assists me often times when there are issues with my health insurance.',
         },
         {
-          image: 'pharmacy.jpg',
+          image: 'pharmacy_t3gl5c.jpg',
           customer: 'Thomas Faden',
           rating: 5,
           time: '5 months ago',
@@ -167,14 +167,14 @@ export default {
             'The team at VivMeds are so dependable. They are one of th best when it comes to health related issues. Cant think of a better pharmacy to sor tout my medical needs.',
         },
         {
-          image: 'pharmacy.jpg',
+          image: 'pharmacy_t3gl5c.jpg',
           customer: 'Tina Medeiros',
           rating: 5,
           time: '5 months ago',
           message: 'Great service and follow up. A very satisfying experience.',
         },
         {
-          image: 'pharmacy.jpg',
+          image: 'pharmacy_t3gl5c.jpg',
           customer: 'Adefolarinwale Adebiyi',
           rating: 5,
           time: '5 months ago',
@@ -182,7 +182,7 @@ export default {
             'Great pharmacy & wonderful customer service. The pharmacists are knowledgeable, while they are very helpful. Hands down my favourite pharmacy.',
         },
         {
-          image: 'pharmacy.jpg',
+          image: 'pharmacy_t3gl5c.jpg',
           customer: 'Femi Aborisade',
           rating: 5,
           time: '5 month ago',
@@ -190,7 +190,7 @@ export default {
             'Great service! Thanks for your professionalism and for getting the medications across to me within a short period of time.',
         },
         {
-          image: 'pharmacy.jpg',
+          image: 'pharmacy_t3gl5c.jpg',
           customer: 'Anthonia Kadiri',
           rating: 5,
           time: '5 months ago',
@@ -199,7 +199,7 @@ export default {
         },
 
         {
-          image: 'pharmacy.jpg',
+          image: 'pharmacy_t3gl5c.jpg',
           customer: 'Eshioramhe Kadiri',
           rating: 5,
           time: '5 months ago',
@@ -207,7 +207,7 @@ export default {
             'Great place for your pharmacy supplies! Courteous staff and clean environment. No hassle!',
         },
         {
-          image: 'pharmacy.jpg',
+          image: 'pharmacy_t3gl5c.jpg',
           customer: 'Tunde Afilaka',
           rating: 5,
           time: '5 months ago',
@@ -215,7 +215,7 @@ export default {
             'Had a very nice experience. Everyone was very professional and service was excellent. They answered all my questions and filled my prescription promptly and correctly.',
         },
         {
-          image: 'pharmacy.jpg',
+          image: 'pharmacy_t3gl5c.jpg',
           customer: 'Adewale Salami',
           rating: 5,
           time: '5 months ago',
@@ -223,7 +223,7 @@ export default {
             'VivMeds is simply the best one-stop shop for excellent pharmacy experience i the DFW area. Femi, Maria and their team made me feel welcomed and were extremely courteous',
         },
         {
-          image: 'pharmacy.jpg',
+          image: 'pharmacy_t3gl5c.jpg',
           customer: '13 Databridge',
           rating: 5,
           time: '5 months ago',

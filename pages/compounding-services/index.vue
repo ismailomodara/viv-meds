@@ -86,7 +86,7 @@ export default {
   data() {
     return {
       title: 'Compounding Services',
-      image: 'compounding.jpg',
+      image: 'compounding_gvfgpd.jpg',
       imageFolder: 'services',
       compoundingServices: config.compoundingServices,
     }

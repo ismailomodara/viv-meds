@@ -99,7 +99,7 @@ export default {
   data() {
     return {
       title: 'Immunizations',
-      image: 'immunizations.jpg',
+      image: 'immunizations_ptxaex.jpg',
       imageFolder: 'services',
       activeVaccination: '',
       vaccinations: [
