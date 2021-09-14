@@ -1,13 +1,18 @@
 import getSiteMeta from './utils/getSiteMeta'
-const meta = getSiteMeta();
+const meta = getSiteMeta()
 
 export default {
-  ssr: false,
+  ssr: true,
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
+  target: 'server',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
+    __dangerouslyDisableSanitizersByTagID: {
+      'gtag-script2': ['innerHTML'],
+      'gtag-script1': ['innerHTML'],
+    },
+
     script: [
       // Global site tag (gtag.js) - Google Analytics
       {
@@ -111,11 +116,6 @@ export default {
         href:
           'https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap',
       },
-      {
-        rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&family=PT+Serif&display=swap',
-      },
     ],
   },
 
@@ -141,11 +141,27 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ['nuxt-compress'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: [/^element-ui/],
+  },
+
+  sitemap: {
+    hostname: 'https://vivmeds.com',
+    gzip: true,
+    path: '/sitemap.xml',
+    cacheTime: 1000 * 60 * 60 * 2,
+    trailingSlash: true,
+  },
+
+  // PWA module configuration: https://go.nuxtjs.dev/pwa
+  pwa: {
+    manifest: {
+      lang: 'en',
+    },
+    icon: false, // disables the icon module
   },
   generate: {
     fallback: true,

@@ -7,7 +7,11 @@
           <nuxt-link :to="`/prescriptions/${cta.link}`">
             <div class="vm-home-action">
               <div class="vm-home-action__icon">
-                <img :src="getImage(`${cta.icon}`, 'home')" :alt="cta.icon" />
+                <img
+                  :src="getImage(`${cta.icon}`, 'home')"
+                  :alt="cta.icon"
+                  loading="lazy"
+                />
               </div>
               <p>{{ cta.title }}</p>
             </div>

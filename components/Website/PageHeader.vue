@@ -5,7 +5,7 @@
         <h2>{{ title }}</h2>
       </div>
       <div v-if="image" class="vm-page-header__image">
-        <img :src="getImage(image, imageFolder)" alt="" />
+        <img :src="getImage(image, imageFolder)" alt="" loading="lazy" />
       </div>
     </el-container>
   </div>

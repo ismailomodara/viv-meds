@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Test</h1>
+    <div class="paintful">T</div>
     <NavBar />
     <nuxt />
     <Footer />
@@ -23,4 +23,9 @@ export default {
 }
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.paintful {
+  color: #ffffff;
+  position: absolute;
+}
+</style>

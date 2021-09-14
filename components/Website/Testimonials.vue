@@ -19,7 +19,11 @@
       >
         <slide v-for="(testimonial, i) in testimonials" :key="i" :index="i">
           <div class="vm-testimonial">
-            <img :src="getImage(testimonial.image, 'services')" alt="" />
+            <img
+              :src="getImage(testimonial.image, 'services')"
+              alt=""
+              loading="lazy"
+            />
             <div class="vm-testimonial__content">
               <h5>{{ testimonial.customer }}</h5>
               <div class="rating">

@@ -2,7 +2,7 @@ const type = 'website'
 const url = 'https://vivmeds.com'
 const title = 'VivMeds Pharmacy'
 const description =
-  'At Vivmeds Pharmacy , we work directly with you to determine where there may be medication-related problems or concerns. Medication management will ensure that all of your medications are consistent with each other and with you.'
+  'Vivmeds Pharmacy in Denton TX provides disease management, affordable prescription medications and compounding services in a compassionate environment.'
 const mainImage = 'https://vivmeds.com/vivmedscard.png'
 
 export default (meta) => {

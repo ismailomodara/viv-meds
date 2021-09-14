@@ -1,7 +1,7 @@
 <template>
   <div class="vm-service-card">
     <div class="vm-service-card__image">
-      <img :src="getImage(image, imageFolder)" alt="" />
+      <img :src="getImage(image, imageFolder)" alt="" loading="lazy" />
     </div>
     <div class="vm-service-card__content">
       <h3>{{ title }}</h3>
