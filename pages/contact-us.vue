@@ -10,11 +10,13 @@
           <div class="vm-contact__content-section">
             <p>
               <span class="label">Phone</span>
-              <span>940-226-4849</span>
+              <a href="tel:940-2264-849" class="mb-0">940-2264-849</a>
             </p>
             <p>
               <span class="label">Email</span>
-              <span>pharmacy@vivmeds.com</span>
+              <a href="mailto:pharmacy@vivmeds.com" class="mb-0"
+                >pharmacy@vivmeds.com</a
+              >
             </p>
             <p>
               <span class="label">Address</span>

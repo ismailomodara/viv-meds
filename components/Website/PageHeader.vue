@@ -5,7 +5,11 @@
         <h2>{{ title }}</h2>
       </div>
       <div v-if="image" class="vm-page-header__image">
-        <img :src="getImage(image, imageFolder)" alt="" loading="lazy" />
+        <img
+          :src="blogImage ? getBlogImage(image) : getImage(image, imageFolder)"
+          alt=""
+          loading="lazy"
+        />
       </div>
     </el-container>
   </div>
@@ -29,6 +33,10 @@ export default {
     imageFolder: {
       type: String,
       default: '',
+    },
+    blogImage: {
+      type: Boolean,
+      default: false,
     },
   },
   data() {

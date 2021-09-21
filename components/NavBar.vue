@@ -35,11 +35,11 @@
             <div class="is-flex is-align-center is-justify-between">
               <div class="vm-navbar__strip-content">
                 <span><i class="el-icon-phone-outline"></i></span>
-                <p>940-2264-849</p>
+                <a href="tel:940-2264-849">940-2264-849</a>
               </div>
               <div class="vm-navbar__strip-content">
                 <span><i class="el-icon-message"></i> </span>
-                <p>pharmacy@vivmeds.com</p>
+                <a href="mailto:pharmacy@vivmeds.com">pharmacy@vivmeds.com</a>
               </div>
             </div>
           </div>

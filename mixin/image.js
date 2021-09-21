@@ -14,5 +14,8 @@ export default {
       }
       return `${CLOUDINARY_URL}/${image}`
     },
+    getBlogImage(image) {
+      return image
+    },
   },
 }

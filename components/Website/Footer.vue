@@ -64,11 +64,13 @@
             <h5>Contact Us</h5>
             <p>
               <span class="label">Phone</span>
-              <span>940-226-4849</span>
+              <a href="tel:940-2264-849" class="mb-0">940-2264-849</a>
             </p>
             <p>
               <span class="label">Email</span>
-              <span>pharmacy@vivmeds.com</span>
+              <a href="mailto:pharmacy@vivmeds.com" class="mb-0"
+                >pharmacy@vivmeds.com</a
+              >
             </p>
             <p>
               <span class="label">Address</span>
@@ -81,15 +83,30 @@
             <h5>Follow Us</h5>
             <p>
               <span class="label">Instagram</span>
-              <span>@vivmedspharmacy</span>
+              <a
+                href="https://www.instagram.com/vivmedspharmacy/"
+                class="mb-0"
+                target="_blank"
+                >@vivmedspharmacy</a
+              >
             </p>
             <p>
               <span class="label">Facebook</span>
-              <span>@vivmedspharmacy</span>
+              <a
+                href="https://web.facebook.com/vivmedspharmacy"
+                class="mb-0"
+                target="_blank"
+                >@vivmedspharmacy</a
+              >
             </p>
             <p>
               <span class="label">Twitter</span>
-              <span>@vivmedspharmacy</span>
+              <a
+                href="https://twitter.com/VivmedsPharmacy"
+                class="mb-0"
+                target="_blank"
+                >@VivmedsPharmacy</a
+              >
             </p>
           </div>
         </el-col>

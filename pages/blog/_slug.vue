@@ -1,6 +1,6 @@
 <template>
   <div v-loading="loading">
-    <PageHeader :title="data.title" :image="blogImage" />
+    <PageHeader :title="data.title" :image="blogImage" :blog-image="true" />
     <el-container class="vm-section pb-0">
       <div class="vm-section_content blog">
         <div v-html="data.content"></div>
@@ -10,10 +10,18 @@
 </template>
 
 <script>
-import request from '@/controller/request'
+import getSiteMeta from '@/utils/getSiteMeta'
 
 export default {
   name: 'BlogInfo',
+  async asyncData({ params }) {
+    const slug = params.slug.split('-')
+    const id = slug[slug.length - 1]
+    const article = await fetch(
+      `https://admin.vivmeds.com/api/blogs/${id}`
+    ).then((res) => res.json())
+    return { article }
+  },
   data() {
     return {
       loading: false,
@@ -21,30 +29,42 @@ export default {
       blogImage: '',
     }
   },
+  head() {
+    const { data } = this.article
+    return {
+      title: `${data.title} | VivmedsPharmacy | Denton TX 76210`,
+      meta: [...this.meta],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `https://vivmeds.com/blog/${this.$route.fullPath}`,
+        },
+      ],
+    }
+  },
   computed: {
-    id() {
-      return this.$route.params.slug
+    meta() {
+      const metaData = [
+        {
+          type: 'article',
+          title: this.article.title,
+          description: this.article.data.description,
+          url: `https://vivmeds.com.com${this.$route.fullPath}`,
+          mainImage: this.article.image_url + '/' + this.data.image,
+        },
+      ]
+      return getSiteMeta(metaData)
     },
+  },
+  mounted() {
+    this.data = { ...this.article.data }
+    this.blogImage = this.article.image_url + '/' + this.data.image
+    this.loading = false
   },
   created() {
-    this.getArticle()
+    this.loading = true
   },
-  methods: {
-    getArticle() {
-      this.loading = true
-      request
-        .blogInfo(this.id)
-        .then((response) => response.json())
-        .then((data) => {
-          this.data = { ...data.data }
-          this.blogImage = `${data.image_url}/${this.data.image}`
-          this.loading = false
-        })
-        .catch(() => {
-          this.$message.error('An error occurred, please again')
-          this.loading = false
-        })
-    },
-  },
+  methods: {},
 }
 </script>

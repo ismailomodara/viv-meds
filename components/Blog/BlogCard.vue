@@ -6,7 +6,7 @@
     <div class="vm-blog-card__content">
       <h3>{{ title }}</h3>
       <div class="content" v-html="description"></div>
-      <nuxt-link :to="`/blog/${id}`">
+      <nuxt-link :to="`/blog/${slug}`">
         <el-button type="primary">Read more</el-button>
       </nuxt-link>
     </div>
@@ -43,6 +43,16 @@ export default {
   },
   data() {
     return {}
+  },
+  computed: {
+    slug() {
+      return `${this.title
+        .toLowerCase()
+        .replace('-', '')
+        .replace('  ', ' ')
+        .split(' ')
+        .join('-')}-${this.id}`
+    },
   },
 }
 </script>
