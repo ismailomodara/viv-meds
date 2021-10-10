@@ -1,6 +1,11 @@
 <template>
   <div>
-    <PageHeader :title="title" :image="image" :image-folder="imageFolder" />
+    <PageHeader
+      :title="title"
+      :image="image"
+      :image-folder="imageFolder"
+      :image-alt="`Compounding Services - ${title}`"
+    />
     <el-container class="vm-section">
       <el-row type="flex" :gutter="30" class="flex-wrap">
         <el-col

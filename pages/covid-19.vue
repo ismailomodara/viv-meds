@@ -1,6 +1,10 @@
 <template>
   <div>
-    <PageHeader :title="title" :image="image" />
+    <PageHeader
+      :title="title"
+      :image="image"
+      :image-alt="'Free Covid-19 Testing, VaccinationVivmeds Pharmacy, Denton TX'"
+    />
     <el-container class="is-flex-column">
       <div class="vm-section_content">
         <h5>Free COVID-19 Vaccine</h5>

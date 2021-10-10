@@ -7,7 +7,7 @@
       <div v-if="image" class="vm-page-header__image">
         <img
           :src="blogImage ? getBlogImage(image) : getImage(image, imageFolder)"
-          alt=""
+          :alt="imageAlt"
           loading="lazy"
         />
       </div>
@@ -31,6 +31,10 @@ export default {
       default: '',
     },
     imageFolder: {
+      type: String,
+      default: '',
+    },
+    imageAlt: {
       type: String,
       default: '',
     },

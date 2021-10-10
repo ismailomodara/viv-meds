@@ -1,6 +1,11 @@
 <template>
   <div>
-    <PageHeader :title="title" :image="image" :image-folder="imageFolder" />
+    <PageHeader
+      :title="title"
+      :image="image"
+      :image-folder="imageFolder"
+      :image-alt="'Integrative Medicine | VivmedsPharmacy | Denton TX 76210'"
+    />
     <el-container class="vm-section pb-0">
       <div class="vm-section_content">
         <h4>Our Integrative approach to wellness</h4>

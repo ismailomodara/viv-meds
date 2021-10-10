@@ -1,6 +1,11 @@
 <template>
   <div>
-    <PageHeader :title="title" :image="image" :image-folder="imageFolder" />
+    <PageHeader
+      :title="title"
+      :image="image"
+      :image-folder="imageFolder"
+      :image-alt="'Diabetes Management | Type 2 | Type 1 Diabetes | Free Consultation'"
+    />
     <el-container class="vm-section pb-0">
       <div class="vm-section_content">
         <p>Among the US population overall, crude estimates for 2018 were:</p>

@@ -19,7 +19,7 @@
           <div class="overlay"></div>
           <img
             :src="getImage(`${slide.image}`, 'services')"
-            alt=""
+            :alt="slide.title"
             loading="lazy"
           />
           <div
@@ -117,7 +117,7 @@
       >
         <img
           :src="getImage(`${slider[1].image}.jpg`, 'services')"
-          alt=""
+          :alt="slider[1].title"
           loading="lazy"
         />
       </div>

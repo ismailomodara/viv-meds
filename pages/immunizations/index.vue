@@ -1,6 +1,11 @@
 <template>
   <div>
-    <PageHeader :title="title" :image="image" :image-folder="imageFolder" />
+    <PageHeader
+      :title="title"
+      :image="image"
+      :image-folder="imageFolder"
+      :image-alt="'Vaccination | Flu Shot | Covid-19| Vivmeds Pharmacy'"
+    />
     <el-container class="vm-section pb-0">
       <div class="vm-section_content text-center">
         <h4>Vaccines for you and your family</h4>

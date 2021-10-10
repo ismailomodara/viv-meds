@@ -1,6 +1,11 @@
 <template>
   <div>
-    <PageHeader :title="title" :image="image" :image-folder="imageFolder" />
+    <PageHeader
+      :title="title"
+      :image="image"
+      :image-folder="imageFolder"
+      :image-alt="title"
+    />
     <el-container class="is-flex-column">
       <div class="vm-section_content">
         <p>

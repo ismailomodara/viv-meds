@@ -1,6 +1,11 @@
 <template>
   <div>
-    <PageHeader :title="title" :image="image" :image-folder="imageFolder" />
+    <PageHeader
+      :title="title"
+      :image="image"
+      :image-folder="imageFolder"
+      :image-alt="`Compounding Services - Animal Care - ${title}`"
+    />
     <el-container class="vm-section pb-0">
       <div class="vm-guides">
         <el-collapse v-model="activeGuide" accordion>

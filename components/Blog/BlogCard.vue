@@ -1,7 +1,7 @@
 <template>
   <div class="vm-blog-card">
     <div class="vm-blog-card__image">
-      <img :src="`${imageUrl}/${image}`" alt="" loading="lazy" />
+      <img :src="`${imageUrl}/${image}`" :alt="title" loading="lazy" />
     </div>
     <div class="vm-blog-card__content">
       <h3>{{ title }}</h3>

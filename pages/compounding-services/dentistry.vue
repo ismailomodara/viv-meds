@@ -1,6 +1,11 @@
 <template>
   <div>
-    <PageHeader :title="title" :image="image" :image-folder="imageFolder" />
+    <PageHeader
+      :title="title"
+      :image="image"
+      :image-folder="imageFolder"
+      :image-alt="`Compounding Services - ${title}`"
+    />
     <el-container class="vm-section pb-0">
       <div class="vm-section_content">
         <h4>Making the Visit to the Dentist Much Easier</h4>

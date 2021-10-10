@@ -1,6 +1,11 @@
 <template>
   <div>
-    <PageHeader :title="title" :image="image" :image-folder="imageFolder" />
+    <PageHeader
+      :title="title"
+      :image="image"
+      :image-folder="imageFolder"
+      :image-alt="'Point of Care Healthcare'"
+    />
     <el-container class="vm-section pb-0">
       <div class="vm-section_content">
         <p>

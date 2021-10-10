@@ -1,6 +1,11 @@
 <template>
   <div>
-    <PageHeader :title="title" :image="image" :image-folder="imageFolder" />
+    <PageHeader
+      :title="title"
+      :image="image"
+      :image-folder="imageFolder"
+      :image-alt="'Smoking Cessation'"
+    />
     <el-container class="vm-section pb-0">
       <div class="vm-section_content">
         <h4>Smoking Cessation: Fast Facts</h4>
@@ -142,14 +147,13 @@ export default {
     meta() {
       const metaData = [
         {
-          title: 'Medication Therapy Management',
+          title: 'Smoking Cessation',
           description: '',
-          url: `https://vivmeds.com/medication-theraphy-management`,
+          url: `https://vivmeds.com/cessation`,
         },
         {
           name: 'keywords',
-          content:
-            'medication therapy management, medication therapy management in pharmacy, denton, auto prescription refill',
+          content: 'Smoking cessation',
         },
       ]
       return getSiteMeta(metaData)
