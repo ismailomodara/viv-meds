@@ -5,7 +5,7 @@
       <el-row type="flex" :gutter="30" class="flex-wrap">
         <el-col v-for="(article, i) in blog" :key="i" :sm="12" :md="12" :lg="8">
           <BlogCard
-            :id="article.id"
+            :slug="article.slug"
             :image-url="imageUrl"
             :image="article.image"
             :title="article.title"

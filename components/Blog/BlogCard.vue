@@ -36,24 +36,15 @@ export default {
       type: String,
       required: true,
     },
-    id: {
-      type: Number,
+    slug: {
+      type: String,
       required: true,
     },
   },
   data() {
     return {}
   },
-  computed: {
-    slug() {
-      return `${this.title
-        .toLowerCase()
-        .replace('-', '')
-        .replace('  ', ' ')
-        .split(' ')
-        .join('-')}-${this.id}`
-    },
-  },
+  computed: {},
 }
 </script>
 

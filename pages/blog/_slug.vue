@@ -15,10 +15,9 @@ import getSiteMeta from '@/utils/getSiteMeta'
 export default {
   name: 'BlogInfo',
   async asyncData({ params }) {
-    const slug = params.slug.split('-')
-    const id = slug[slug.length - 1]
+    const slug = params.slug
     const article = await fetch(
-      `https://admin.vivmeds.com/api/blogs/${id}`
+      `https://admin.vivmeds.com/api/blogs/${slug}`
     ).then((res) => res.json())
     return { article }
   },
