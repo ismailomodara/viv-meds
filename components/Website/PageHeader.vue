@@ -2,7 +2,7 @@
   <div class="vm-page-header">
     <el-container>
       <div v-if="title" class="vm-page-header__title">
-        <h2>{{ title }}</h2>
+        <h1>{{ title }}</h1>
       </div>
       <div v-if="image" class="vm-page-header__image">
         <img
@@ -58,7 +58,7 @@ export default {
   }
 
   &__title {
-    h2 {
+    h1 {
       color: #6a8b2c;
       margin-bottom: 40px;
       font-size: 2rem;

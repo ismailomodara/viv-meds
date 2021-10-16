@@ -21,7 +21,7 @@
           <div class="vm-testimonial">
             <img
               :src="getImage(testimonial.image, 'services')"
-              alt=""
+              alt="VivMeds User"
               loading="lazy"
             />
             <div class="vm-testimonial__content">

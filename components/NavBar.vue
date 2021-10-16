@@ -49,7 +49,7 @@
         <el-container>
           <nuxt-link to="/"
             ><div :class="['vm-navbar__logo', { show: hideNavbarStrip }]">
-              <img :src="getLogo('white')" alt="" loading="lazy" /></div
+              <img :src="getLogo('white')" alt="VivMeds" loading="lazy" /></div
           ></nuxt-link>
           <div class="vm-navbar__menu-toggler" @click="toggleNav">
             <svg
