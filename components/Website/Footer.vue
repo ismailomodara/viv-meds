@@ -64,7 +64,7 @@
             <h5>Contact Us</h5>
             <p>
               <span class="label">Phone</span>
-              <a href="tel:940-2264-849" class="mb-0">940-2264-849</a>
+              <a href="tel:940-226-4849" class="mb-0">940-226-4849</a>
             </p>
             <p>
               <span class="label">Email</span>

@@ -10,7 +10,7 @@
           <div class="vm-contact__content-section">
             <p>
               <span class="label">Phone</span>
-              <a href="tel:940-2264-849" class="mb-0">940-2264-849</a>
+              <a href="tel:940-226-4849" class="mb-0">940-226-4849</a>
             </p>
             <p>
               <span class="label">Email</span>
@@ -151,7 +151,7 @@ export default {
           description:
             'Vivmeds Pharmacy | 3303 Unicorn Lake Blvd Suite 280 DentonTX\n' +
             ' | 303 \n' +
-            '76210. Call us: 940-2264-849. Email: pharmacy@vivmeds.com TX\n',
+            '76210. Call us: 940-226-4849. Email: pharmacy@vivmeds.com TX\n',
           url: `https://vivmeds.com/contact-us`,
         },
         {
@@ -159,7 +159,7 @@ export default {
           content:
             'Vivmeds Pharmacy | 3303 Unicorn Lake Blvd Suite 280 DentonTX\n' +
             ' | 303 \n' +
-            '76210. Call us: 940-2264-849. Email: pharmacy@vivmeds.com TX\n',
+            '76210. Call us: 940-226-4849. Email: pharmacy@vivmeds.com TX\n',
         },
       ]
       return getSiteMeta(metaData)

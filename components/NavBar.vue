@@ -35,7 +35,7 @@
             <div class="is-flex is-align-center is-justify-between">
               <div class="vm-navbar__strip-content">
                 <span><i class="el-icon-phone-outline"></i></span>
-                <a href="tel:940-2264-849">940-2264-849</a>
+                <a href="tel:940-226-4849">940-226-4849</a>
               </div>
               <div class="vm-navbar__strip-content">
                 <span><i class="el-icon-message"></i> </span>
