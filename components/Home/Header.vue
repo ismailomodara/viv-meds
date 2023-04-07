@@ -18,7 +18,7 @@
         >
           <div class="overlay"></div>
           <img
-            :src="getImage(`${slide.image}.jpg`, 'services')"
+            :src="getImage(`${slide.image}`, 'services')"
             :alt="slide.title"
             loading="lazy"
           />
